@@ -1,0 +1,22 @@
+# main links links
+main:
+  - title: "CV"
+    url: "#about-me"
+
+  - title: "Education"
+    url: "#-xl"
+
+  - title: "Publications"
+    url: "#-lwzl"
+
+  - title: "Patents"
+    url: "#-zl"
+
+  - title: "Awards"
+    url: "#-ryjx"
+
+  - title: "Confereces"
+    url: "#-xshy"
+
+  - title: "Experience"
+    url: "#-gzsx"
