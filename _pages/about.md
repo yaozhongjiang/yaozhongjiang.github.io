@@ -17,11 +17,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I received my PhD from the University of Chinese Academy of Sciences, and my supervisor was Professor Jingguo Ge. During my Ph.D., I focused on the identification and tracking of network traffic. After graduating from Ph.D., while working at Huawei, I had the opportunity to participate in information retrieval-related projects, which started my research interests in natural language processing and LLM. Currently, I work at the Institute of Information Engineering, Chinese Academy of Sciences, mainly engaged in research in the field of large models. So far, I have published more than 10 papers.
- <a href='https://scholar.google.com/citations?user=mNQ2160AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=引用"></a>。
+I obtained my Ph.D. from the University of Chinese Academy of Sciences under the supervision of Professor Jingguo Ge. During my Ph.D. studies, I primarily focused on network traffic identification and tracking. After graduation, I worked at Huawei, where I had the opportunity to participate in projects related to information retrieval, which sparked my interest in LLM-based Agents, natural language processing, and large language models (LLMs). I am currently employed at the Institute of Information Engineering, Chinese Academy of Sciences, where I mainly conduct research in the field of large models. To date, I have published more than 10 papers in areas such as deep learning and LLMs, and I have served as a session chair or reviewer for several international conferences, including IJCNN and CIKM.
+ <a href='https://scholar.google.com/citations?user=mNQ2160AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=引用"></a>
 
 My research fields involve：
-- Large Model Agents based Content Generation
+- Large Model Agents Collaboration
 - LLM performance and security evaluation
 - Natural Language Processing
 - Blockchain
@@ -41,10 +41,15 @@ My research fields involve：
 # 📝 Publications
 
 ### Submitted
+-	Yuanshu Zhao, Xuehai Tang, Guan Wang, `Zhongjiang Yao`, Biyu Zhou, Wei Zhou, Xiaodan Zhang. Zero-Shot Tracing Money Laundering on Tornado.Cash via Adversarial Transferred Temporal Correlation Mining. *2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025)*. (CCF B, Submitted)  
+- Shang Shang, `Zhongjiang Yao*`, Xinqiang Zhao, Yepeng Yao, Yali Su, Zhijing Fan, Xiaodan Zhang, Zhengwei Jiang. Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent. *The Computer Journal*. (CCF B, Submitted)
+- Xuehai Tang, Xikang Yang, `Zhongjiang Yao`, Jie Wen, Xi Zhou, Jizhong Han, Songlin Hu. Enhancing LLM Jailbreak: A Dual-Strategy Approach of Token Suppression and Induction. *43rd IEEE -- International Performance Computing and Communications Conference (IPCCC 2024)*. (CCF C, Submitted)
 
--	Shangshang, `Zhongjiang Yao*`, Liya Su, Yepeng Yao, Zijing Fan, Xiaodan Zhang, Zhengwei Jiang. IntentObfuscator: A jailbreaking method via confuses LLM with prompts. *The 40th Conference on Uncertainty in Artificial Intelligence (UAI 2024)*. (CCF B)  
--	Xuehai Tang, `Zhongjiang Yao*`, Huazhen Zhong, Yuanshu Zhao, Guan Wang, Xiaodan Zhang, Jizhong Han. EthGAN: Improving Ethereum Account Classification Accurary via Data Augmentation. *International Joint Conference on Neural Networks (IJCNN 2024)*. (CCF C)  
--	Yuanshu Zhao, Xuehai Tang, Guan Wang, `Zhongjiang Yao`, Biyu Zhou, Wei Zhou, Xiaodan Zhang. Zero-Shot Tracing Money Laundering on Tornado.Cash via Adversarial Transferred Temporal Correlation Mining. *The 29th International Conference on Database Systems for Advanced Applications (DASFAA 2024)*. (CCF B)  
+### Accepted
+
+-	Shangshang, `Zhongjiang Yao*`, Liya Su, Yepeng Yao, Zijing Fan, Xiaodan Zhang, Zhengwei Jiang. IntentObfuscator: A jailbreaking method via confuses LLM with prompts. *29th European Symposium on Research in Computer Security (ESORICS 2024)*. (CCF B, Accepted)  
+-	Xuehai Tang, `Zhongjiang Yao*`, Huazhen Zhong, Yuanshu Zhao, Guan Wang, Xiaodan Zhang, Jizhong Han. EthGAN: Improving Ethereum Account Classification Accurary via Data Augmentation. *International Joint Conference on Neural Networks (IJCNN 2024)*. (CCF C, Accepted)  
+- Xuehai Tang, `Zhongjiang Yao*`, Jie Wen`*`, Yangchen Dong, Jizhong Han, Songlin Hu. Reinforcement Learning-Powered Effectiveness and Effciency Few-Shot Jailbreaking Attack LLMs. *The 22nd IEEE International Symposium on Parallel and Distributed Processing with Applications (IEEE ISPA 2024)*. (CCF C, Accepted)
 
 
 ### Published
@@ -137,7 +142,8 @@ My research fields involve：
 
 <span class='anchor' id='-xshy'></span>
 
-# 🏛️ Academia Conference
+# 🏛️ Academic Activities
+- *2024.08*, Reviewer for CCF-B conference 33rd ACM International Conference on Information and Knowledge Management (CIKM 2024)
 - *2019.06*, Participate in the ICC-2019, Poster presente, Shanghai, China
 - *2016.12*, Participate in the HPCC-2016, Oral presenter, Sydney, Austrilia
 
