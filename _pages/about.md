@@ -40,20 +40,33 @@ My research fields involve：
 
 # 📝 Publications
 
-### Submitted
--	Yuanshu Zhao, Xuehai Tang, Guan Wang, `Zhongjiang Yao`, Biyu Zhou, Wei Zhou, Xiaodan Zhang. Zero-Shot Tracing Money Laundering on Tornado.Cash via Adversarial Transferred Temporal Correlation Mining. *2025 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2025)*. (CCF B, Submitted)  
-- Shang Shang, `Zhongjiang Yao*`, Xinqiang Zhao, Yepeng Yao, Yali Su, Zhijing Fan, Xiaodan Zhang, Zhengwei Jiang. Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent. *The Computer Journal*. (CCF B, Submitted)
-- Xuehai Tang, Xikang Yang, `Zhongjiang Yao`, Jie Wen, Xi Zhou, Jizhong Han, Songlin Hu. Enhancing LLM Jailbreak: A Dual-Strategy Approach of Token Suppression and Induction. *43rd IEEE -- International Performance Computing and Communications Conference (IPCCC 2024)*. (CCF C, Submitted)
-
 ### Accepted
+-	Haozhe Li, Hanwen Kang, `Zhongjiang Yao*`, Yepeng Yao, Yingxiao Xiang, Zhengwei Jiang, Xiaodan Zhang. PrivacyShadow: Unveiling Privacy Vulnerabilities in VLMs through MIAs. *The 33rd ACM International Conference on Multimedia (ACM MM 2025)*. (CCF A, Submitted)  
 
--	Shangshang, `Zhongjiang Yao*`, Liya Su, Yepeng Yao, Zijing Fan, Xiaodan Zhang, Zhengwei Jiang. IntentObfuscator: A jailbreaking method via confuses LLM with prompts. *29th European Symposium on Research in Computer Security (ESORICS 2024)*. (CCF B, Accepted)  
--	Xuehai Tang, `Zhongjiang Yao*`, Huazhen Zhong, Yuanshu Zhao, Guan Wang, Xiaodan Zhang, Jizhong Han. EthGAN: Improving Ethereum Account Classification Accurary via Data Augmentation. *International Joint Conference on Neural Networks (IJCNN 2024)*. (CCF C, Accepted)  
-- Xuehai Tang, `Zhongjiang Yao*`, Jie Wen`*`, Yangchen Dong, Jizhong Han, Songlin Hu. Reinforcement Learning-Powered Effectiveness and Effciency Few-Shot Jailbreaking Attack LLMs. *The 22nd IEEE International Symposium on Parallel and Distributed Processing with Applications (IEEE ISPA 2024)*. (CCF C, Accepted)
+- Xuehai Tang, Xikang Yang, `Zhongjiang Yao*`, Jie Wen, Xi Zhou, Jizhong Han, Songlin Hu. Enhancing LLM Jailbreak: A Dual-Strategy Approach of Token Suppression and Induction. *43rd IEEE -- International Performance Computing and Communications Conference (CSCWD 2025)*. (CCF C, Accepted)
+
 
 
 ### Published
 #### In English
+- Guoyi Li, `Zhongjiang Yao†`, Die Hu, Yingrui Xu, Xiaodan Zhang, Honglei Lyu. Emotion-aware Structural Enhancement Graph Auto-Encoder for Rumor Detection. *2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2025)*, (CCF-B)
+[[网页]](https://ieeexplore.ieee.org/abstract/document/10889918)[[预览]](https://ieeexplore.ieee.org/abstract/document/10889918)[[下载]](https://ieeexplore.ieee.org/abstract/document/10889918) 
+
+- Shang Shang, `Zhongjiang Yao*`, Xinqiang Zhao, Yepeng Yao, Yali Su, Zhijing Fan, Xiaodan Zhang, Zhengwei Jiang. Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent. *The Computer Journal*. (CCF B)
+[[网页]](https://dl.acm.org/doi/full/10.1145/3709026.3709115)[[预览]](https://dl.acm.org/doi/full/10.1145/3709026.3709115)[[下载]](https://dl.acm.org/doi/full/10.1145/3709026.3709115) 
+  
+- Xuehai Tang, Wenjie Xiao, `Zhongjiang Yao*`, Jizhong Han. SwordEcho: A LLM Jailbreaking Optimization Strategy Driven by Reinforcement Learning. *The 2024 8th International Conference on Computer Science and Artificial Intelligence (CSAI 2024)*, (CCF-C)
+[[网页]](https://academic.oup.com/comjnl/advance-article-abstract/doi/10.1093/comjnl/bxae124/7919595)[[预览]](https://academic.oup.com/comjnl/advance-article-abstract/doi/10.1093/comjnl/bxae124/7919595)[[下载]](https://academic.oup.com/comjnl/advance-article-abstract/doi/10.1093/comjnl/bxae124/7919595) 
+
+-	Shangshang, `Zhongjiang Yao*`, Liya Su, Yepeng Yao, Zijing Fan, Xiaodan Zhang, Zhengwei Jiang. IntentObfuscator: A jailbreaking method via confuses LLM with prompts. *29th European Symposium on Research in Computer Security (ESORICS 2024)*. (CCF B)
+[[网页]](https://link.springer.com/chapter/10.1007/978-3-031-70903-6_8)[[预览]](https://link.springer.com/chapter/10.1007/978-3-031-70903-6_8)[[下载]](https://link.springer.com/chapter/10.1007/978-3-031-70903-6_8) 
+
+-	Xuehai Tang, `Zhongjiang Yao*`, Huazhen Zhong, Yuanshu Zhao, Guan Wang, Xiaodan Zhang, Jizhong Han. EthGAN: Improving Ethereum Account Classification Accurary via Data Augmentation. *International Joint Conference on Neural Networks (IJCNN 2024)*. (CCF C)
+[[网页]](https://ieeexplore.ieee.org/document/10650065)[[预览]](https://ieeexplore.ieee.org/document/10650065)[[下载]](https://ieeexplore.ieee.org/document/10650065)
+
+- Xuehai Tang, `Zhongjiang Yao*`, Jie Wen*, Yangchen Dong, Jizhong Han, Songlin Hu. Reinforcement Learning-Powered Effectiveness and Effciency Few-Shot Jailbreaking Attack LLMs. *The 22nd IEEE International Symposium on Parallel and Distributed Processing with Applications (IEEE ISPA 2024)*. (CCF C)
+[[网页]](https://ieeexplore.ieee.org/document/10885191)[[预览]](https://ieeexplore.ieee.org/document/10885191)[[下载]](https://ieeexplore.ieee.org/document/10885191)
+
 ---
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">JNCA 2020</div><img src='images/JNCA/2020.svg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
