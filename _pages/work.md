@@ -21,13 +21,13 @@ author_profile: false
       </div>
       <div class="work-detail">
         {% if job.focus %}
-        <p><span class="work-label">Focus</span> {{ job.focus }}</p>
+        <p><span class="work-label">Focus</span><span class="work-copy">{{ job.focus }}</span></p>
         {% endif %}
         {% if job.contribution %}
-        <p><span class="work-label">Contribution</span> {{ job.contribution }}</p>
+        <p><span class="work-label">Contribution</span><span class="work-copy">{{ job.contribution }}</span></p>
         {% endif %}
         {% if job.awards %}
-        <p><span class="work-label">Awards</span> {{ job.awards }}</p>
+        <p><span class="work-label">Awards</span><span class="work-copy">{{ job.awards }}</span></p>
         {% endif %}
       </div>
     </li>
