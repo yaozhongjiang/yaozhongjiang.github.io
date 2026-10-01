@@ -2,7 +2,8 @@ name: Update publications
 
 on:
   schedule:
-    - cron: "0 8 * * *"
+    # 08:00 UTC on 1 January and 1 July, every six months.
+    - cron: "0 8 1 1,7 *"
   workflow_dispatch:
 
 permissions:
