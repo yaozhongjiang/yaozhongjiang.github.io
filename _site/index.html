@@ -105,7 +105,7 @@
           
             
             <li class="masthead__menu-item">
-              <a href="/publication/" target="_self">publication</a>
+              <a href="/publication/" target="_self">Publications</a>
             </li>
           
             
@@ -167,32 +167,48 @@
       <h2>Recent activities</h2>
       <ul class="activity-list">
         
-        <li>
+        <li data-end="2026-11-25">
           <span class="activity-date">24–25 Nov 2026</span>
-          <span>UKAIRS 26, organized by the University of Edinburgh</span>
+          <span>UKAIRS 26, organized by the University of Edinburgh<span class="activity-check" aria-hidden="true"></span></span>
         </li>
         
-        <li>
+        <li data-end="2026-10-19">
           <span class="activity-date">19 Oct 2026</span>
-          <span>Olympia AI Live</span>
+          <span>Olympia AI Live<span class="activity-check" aria-hidden="true"></span></span>
         </li>
         
-        <li>
+        <li data-end="2026-10-09">
           <span class="activity-date">5–9 Oct 2026</span>
-          <span>attended Oxford University BOLD Collaboration Week and organized the Multi-agent Distributed Security Workshop</span>
+          <span>attended Oxford University BOLD Collaboration Week and organized the Multi-agent Distributed Security Workshop<span class="activity-check" aria-hidden="true"></span></span>
         </li>
         
-        <li>
+        <li data-end="2026-09-10">
           <span class="activity-date">10 Sep 2026</span>
-          <span>attended UCL SOFAIR Launch Event</span>
+          <span>attended UCL SOFAIR Launch Event<span class="activity-check" aria-hidden="true"></span></span>
         </li>
         
-        <li>
+        <li data-end="2026-08-03">
           <span class="activity-date">3 Aug 2026</span>
-          <span>attended Oxford University BOLD</span>
+          <span>attended Oxford University BOLD<span class="activity-check" aria-hidden="true"></span></span>
         </li>
         
       </ul>
+      <script>
+        (function () {
+          var now = new Date();
+          var month = now.getMonth() + 1;
+          var day = now.getDate();
+          var today = now.getFullYear() + "-" + (month < 10 ? "0" : "") + month + "-" + (day < 10 ? "0" : "") + day;
+          var items = document.querySelectorAll(".activity-list li[data-end]");
+          for (var i = 0; i < items.length; i++) {
+            if (items[i].getAttribute("data-end") >= today) continue;
+            var mark = items[i].querySelector(".activity-check");
+            mark.textContent = "✓";
+            mark.setAttribute("aria-label", "Completed");
+            mark.removeAttribute("aria-hidden");
+          }
+        })();
+      </script>
     </section>
     <section class="panel">
       <h2>Recently published papers</h2>

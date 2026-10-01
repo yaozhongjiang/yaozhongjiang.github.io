@@ -144,6 +144,12 @@
   font-variant-numeric: tabular-nums;
 }
 
+.activity-check {
+  margin-left: 0.35em;
+  color: #1a9d3a;
+  font-weight: 700;
+}
+
 .profile-links {
   display: flex;
   flex-wrap: wrap;

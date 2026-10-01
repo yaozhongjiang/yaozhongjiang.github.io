@@ -46,12 +46,28 @@ redirect_from:
       <h2>Recent activities</h2>
       <ul class="activity-list">
         {% for item in site.data.activities.items %}
-        <li>
+        <li data-end="{{ item.end }}">
           <span class="activity-date">{{ item.date }}</span>
-          <span>{{ item.text }}</span>
+          <span>{{ item.text }}<span class="activity-check" aria-hidden="true"></span></span>
         </li>
         {% endfor %}
       </ul>
+      <script>
+        (function () {
+          var now = new Date();
+          var month = now.getMonth() + 1;
+          var day = now.getDate();
+          var today = now.getFullYear() + "-" + (month < 10 ? "0" : "") + month + "-" + (day < 10 ? "0" : "") + day;
+          var items = document.querySelectorAll(".activity-list li[data-end]");
+          for (var i = 0; i < items.length; i++) {
+            if (items[i].getAttribute("data-end") >= today) continue;
+            var mark = items[i].querySelector(".activity-check");
+            mark.textContent = "✓";
+            mark.setAttribute("aria-label", "Completed");
+            mark.removeAttribute("aria-hidden");
+          }
+        })();
+      </script>
     </section>
     <section class="panel">
       <h2>Recently published papers</h2>

@@ -36,6 +36,9 @@ author_profile: false
       {% endif %}
       <a href="{{ linkedin_url }}"><img class="brand-icon" src="{{ '/images/logos/linkedin.svg' | relative_url }}" alt="" width="18" height="18"> LinkedIn</a>
     {% endif %}
+    {% if site.author.orcid %}
+      <a href="{{ site.author.orcid }}"><img class="brand-icon" src="{{ '/images/logos/orcid.svg' | relative_url }}" alt="" width="18" height="18"> ORCID</a>
+    {% endif %}
   </p>
 
   <div class="two-col stat-grid">
@@ -54,7 +57,7 @@ author_profile: false
       <p><strong>i10-index</strong> {{ site.data.publications.stats.i10_index }}</p>
     </section>
   </div>
-  <p class="stat-note">Lines show papers and citation counts by publication year. A year with no papers or citations is drawn as zero. Totals use OpenAlex (ORCID {{ site.author.orcid }}). Google Scholar did not return numbers.</p>
+  <p class="stat-note">Lines show papers and citation counts by publication year. A year with no papers or citations is drawn as zero. The citation total, h-index, and i10-index are OpenAlex counts for ORCID 0000-0001-6583-9526.</p>
   <script id="yearly-data" type="application/json">{{ site.data.publications.yearly | jsonify }}</script>
   <script src="{{ '/assets/js/year-charts.js' | relative_url }}"></script>
 
