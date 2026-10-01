@@ -53,7 +53,7 @@ author_profile: false
       <p><strong>i10-index</strong> {{ site.data.publications.stats.i10_index }}</p>
     </section>
   </div>
-  <p class="stat-note">Lines show papers and citation counts by publication year. A year with no papers or citations is drawn as zero. The citation total, h-index, and i10-index are OpenAlex counts for ORCID 0000-0001-6583-9526.</p>
+  <p class="stat-note">Lines show papers and citation counts by publication year. A year with no papers or citations is drawn as zero. The list is refreshed from OpenAlex and Semantic Scholar for ORCID 0000-0001-6583-9526{% if site.data.publications.stats.updated %} (last checked {{ site.data.publications.stats.updated }}){% endif %}. The citation total, h-index, and i10-index are the OpenAlex author counts.</p>
   <script id="yearly-data" type="application/json">{{ site.data.publications.yearly | jsonify }}</script>
   <script src="{{ '/assets/js/year-charts.js' | relative_url }}"></script>
 
