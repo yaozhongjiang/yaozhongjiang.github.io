@@ -7,6 +7,7 @@ author_profile: false
 
 <div class="site-wrap">
   <h1 class="page-heading">Contact</h1>
+  <p class="contact-note">Welcome. Please use the details below for academic exchange only.</p>
   <ul class="contact-list">
     <li>
       <span class="contact-label">Email</span>

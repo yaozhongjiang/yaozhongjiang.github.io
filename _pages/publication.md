@@ -29,12 +29,8 @@ author_profile: false
       <a href="{{ site.author.googlescholar }}"><img class="brand-icon brand-icon--scholar" src="{{ '/images/logos/scholar.svg' | relative_url }}" alt="" width="18" height="18"> Google Scholar</a>
     {% endif %}
     {% if site.author.linkedin %}
-      {% if site.author.linkedin contains "://" %}
-        {% assign linkedin_url = site.author.linkedin %}
-      {% else %}
-        {% assign linkedin_url = "https://www.linkedin.com/in/" | append: site.author.linkedin %}
-      {% endif %}
-      <a href="{{ linkedin_url }}"><img class="brand-icon" src="{{ '/images/logos/linkedin.svg' | relative_url }}" alt="" width="18" height="18"> LinkedIn</a>
+      {% include linkedin-url.html %}
+      <a href="{{ linkedin_url }}" title="https://www.linkedin.com/in/zhongjiang-yao-b0756a406/"><img class="brand-icon" src="{{ '/images/logos/linkedin.svg' | relative_url }}" alt="" width="18" height="18"> LinkedIn</a>
     {% endif %}
     {% if site.author.orcid %}
       <a href="{{ site.author.orcid }}"><img class="brand-icon" src="{{ '/images/logos/orcid.svg' | relative_url }}" alt="" width="18" height="18"> ORCID</a>

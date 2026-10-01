@@ -16,12 +16,8 @@ redirect_from:
       <p class="home-affiliation">{{ site.author.bio }}</p>
       <p class="identity-links">
         {% if site.author.linkedin %}
-          {% if site.author.linkedin contains "://" %}
-            {% assign linkedin_url = site.author.linkedin %}
-          {% else %}
-            {% assign linkedin_url = "https://www.linkedin.com/in/" | append: site.author.linkedin %}
-          {% endif %}
-          <a href="{{ linkedin_url }}" aria-label="LinkedIn"><img src="{{ '/images/logos/linkedin.svg' | relative_url }}" alt="LinkedIn" width="26" height="26"></a>
+          {% include linkedin-url.html %}
+          <a href="{{ linkedin_url }}" aria-label="LinkedIn" title="https://www.linkedin.com/in/zhongjiang-yao-b0756a406/"><img src="{{ '/images/logos/linkedin.svg' | relative_url }}" alt="LinkedIn" width="26" height="26"></a>
         {% endif %}
         {% if site.author.orcid %}
           <a href="{{ site.author.orcid }}" aria-label="ORCID"><img src="{{ '/images/logos/orcid.svg' | relative_url }}" alt="ORCID" width="26" height="26"></a>

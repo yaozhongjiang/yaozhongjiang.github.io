@@ -1,14 +1,24 @@
-# Work experience as written in _pages/about.md.
+# Work experience as written on the home page.
+# Focus and contributions stay inside that text. No award or patent
+# was found in the site or in a Google Patents inventor search, so those
+# fields are omitted rather than filled in.
 items:
   - dates: "2026.04 – Now"
     place: "Postdoctoral Researcher, King's College London (KCL), London, United Kingdom"
     logo: "/images/logos/kcl.svg"
     logo_alt: "King's College London"
+    focus: "Large models, multi-agent collaboration, and LLM privacy and security."
+    contribution: "Postdoctoral research on large models. Senior PC of AAMAS, and a reviewer for ICLR and ACL."
   - dates: "2021.12 – 2026.04"
     place: "Institute of Information Sciences, Chinese Academy of Sciences, Beijing, China"
     logo: "/images/logos/cas.png"
     logo_alt: "Chinese Academy of Sciences"
+    focus: "LLM security, blockchain, and rumor detection."
+    contribution: "Papers published during this appointment include LLM jailbreak attacks, Ethereum account classification, and rumor detection."
   - dates: "2019.07 – 2021.12"
     place: "Beijing Huawei Digital Technologies Co., Ltd., Beijing, China"
     logo: "/images/logos/huawei.svg"
     logo_alt: "Huawei"
+    focus: "Information retrieval."
+    contribution: "Took part in information retrieval projects. That work led into later research on LLM-based agents, natural language processing, and large language models."
+patents: []

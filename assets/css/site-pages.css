@@ -255,11 +255,34 @@
 }
 
 .work-list li {
+  display: block;
+  padding: 1rem 0 0.7rem;
+  border-bottom: 1px solid #e6e7e8;
+}
+
+.work-head {
   display: flex;
   align-items: center;
   gap: 0.9rem;
-  padding: 0.85rem 0;
-  border-bottom: 1px solid #e6e7e8;
+}
+
+.work-detail {
+  margin: 0.55rem 0 0;
+}
+
+.work-detail p {
+  margin: 0.28rem 0;
+}
+
+.work-label {
+  display: inline-block;
+  min-width: 7.2rem;
+  color: #494e52;
+  font-weight: 600;
+}
+
+.contact-note {
+  margin: 0 0 0.4rem;
 }
 
 .work-logo {
