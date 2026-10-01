@@ -288,6 +288,12 @@
   font-weight: 600;
 }
 
+.footer_copyright .footer-mark {
+  width: 16px;
+  height: 16px;
+  margin: 0 0.45rem;
+}
+
 .greedy-nav .visible-links a.is-current {
   color: #224b8d;
 }

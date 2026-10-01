@@ -1,6 +1,6 @@
 ---
 permalink: /publication/
-title: "publication"
+title: "Publications"
 excerpt: ""
 author_profile: false
 ---
@@ -19,7 +19,7 @@ author_profile: false
 {% endfor %}
 
 <div class="site-wrap">
-  <h1 class="page-heading">publication</h1>
+  <h1 class="page-heading">Publications</h1>
 
   <p class="profile-links">
     {% if site.author.dblp %}
@@ -29,7 +29,12 @@ author_profile: false
       <a href="{{ site.author.googlescholar }}"><img class="brand-icon brand-icon--scholar" src="{{ '/images/logos/scholar.svg' | relative_url }}" alt="" width="18" height="18"> Google Scholar</a>
     {% endif %}
     {% if site.author.linkedin %}
-      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
+      {% if site.author.linkedin contains "://" %}
+        {% assign linkedin_url = site.author.linkedin %}
+      {% else %}
+        {% assign linkedin_url = "https://www.linkedin.com/in/" | append: site.author.linkedin %}
+      {% endif %}
+      <a href="{{ linkedin_url }}"><img class="brand-icon" src="{{ '/images/logos/linkedin.svg' | relative_url }}" alt="" width="18" height="18"> LinkedIn</a>
     {% endif %}
   </p>
 
@@ -49,7 +54,7 @@ author_profile: false
       <p><strong>i10-index</strong> {{ site.data.publications.stats.i10_index }}</p>
     </section>
   </div>
-  <p class="stat-note">Lines show papers and known citation counts by publication year. A blank citation point means that year’s counts were not found. Totals use OpenAlex (ORCID {{ site.author.orcid }}). Google Scholar did not return numbers.</p>
+  <p class="stat-note">Lines show papers and citation counts by publication year. A year with no papers or citations is drawn as zero. Totals use OpenAlex (ORCID {{ site.author.orcid }}). Google Scholar did not return numbers.</p>
   <script id="yearly-data" type="application/json">{{ site.data.publications.yearly | jsonify }}</script>
   <script src="{{ '/assets/js/year-charts.js' | relative_url }}"></script>
 

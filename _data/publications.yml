@@ -12,9 +12,8 @@ stats:
   i10_index: 5
   source: "OpenAlex"
 
-# Paper counts include every listed paper. Citation points sum known counts only.
-# 2017 and 2021 have papers whose citation counts were not found, so those
-# citation points are left blank instead of drawn as zero.
+# Paper counts include every listed paper. A year with no papers or no
+# matched citations is stored as 0 so the yearly lines stay continuous.
 yearly:
   - year: 2014
     papers: 1
@@ -27,7 +26,7 @@ yearly:
     citations: 0
   - year: 2017
     papers: 1
-    citations:
+    citations: 0
   - year: 2018
     papers: 3
     citations: 153
@@ -39,7 +38,7 @@ yearly:
     citations: 64
   - year: 2021
     papers: 1
-    citations:
+    citations: 0
   - year: 2022
     papers: 0
     citations: 0

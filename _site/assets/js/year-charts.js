@@ -41,28 +41,22 @@
     parts.push('<text x="' + (pad.l - 6) + '" y="' + (y(max) + 4) + '" text-anchor="end" font-size="11" fill="#7a8288">' + max + "</text>");
     parts.push('<text x="' + (pad.l - 6) + '" y="' + (y(0) + 4) + '" text-anchor="end" font-size="11" fill="#7a8288">0</text>');
 
-    var segment = [];
-    function flush() {
-      if (segment.length > 1) {
-        parts.push('<polyline fill="none" stroke="#224b8d" stroke-width="2" points="' + segment.join(" ") + '"/>');
-      }
-      segment = [];
-    }
-
+    var points = [];
+    var dots = [];
     for (var p = 0; p < rows.length; p++) {
       var row = rows[p];
       var point = row[key];
+      if (point === null || point === undefined || point === "") point = 0;
       var px = x(p);
-      if (point === null || point === undefined) {
-        flush();
-      } else {
-        var py = y(point);
-        segment.push(px + "," + py);
-        parts.push('<circle cx="' + px + '" cy="' + py + '" r="3.2" fill="#224b8d"><title>' + row.year + ": " + point + "</title></circle>");
-      }
+      var py = y(point);
+      points.push(px + "," + py);
+      dots.push('<circle cx="' + px + '" cy="' + py + '" r="3.2" fill="#224b8d"><title>' + row.year + ": " + point + "</title></circle>");
       parts.push('<text x="' + px + '" y="' + (h - 18) + '" text-anchor="end" font-size="10" fill="#7a8288" transform="rotate(-45 ' + px + " " + (h - 18) + ')">' + row.year + "</text>");
     }
-    flush();
+    if (points.length > 1) {
+      parts.push('<polyline fill="none" stroke="#224b8d" stroke-width="2" points="' + points.join(" ") + '"/>');
+    }
+    parts.push(dots.join(""));
     parts.push("</svg>");
     el.innerHTML = parts.join("");
   }
