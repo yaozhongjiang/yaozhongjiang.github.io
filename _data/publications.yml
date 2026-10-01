@@ -49,13 +49,37 @@ yearly:
     papers: 6
     citations: 18
   - year: 2025
-    papers: 4
+    papers: 3
     citations: 4
   - year: 2026
-    papers: 2
+    papers: 5
     citations: 0
 
 papers:
+  - title: "Knowledge-Enhanced Image Captioning with Adaptive Graph-based Multimodal Alignment and LLM"
+    venue: "AAAI 2026"
+    year: 2026
+    kind: conference
+    url: "https://ojs.aaai.org/index.php/AAAI/article/view/38532"
+    citations: 0
+    recent: true
+
+  - title: "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs"
+    venue: "ACL 2026"
+    year: 2026
+    kind: conference
+    url: "https://aclanthology.org/2026.acl-long.2015/"
+    citations: 0
+    recent: true
+
+  - title: "PrivacyShadow: Revealing Fine-Tuning Leakage in Vision-Language Models Via Dual-Level Black-Box Attacks"
+    venue: "ICASSP 2026"
+    year: 2026
+    kind: conference
+    url: "https://doi.org/10.1109/icassp55912.2026.11463711"
+    citations: 0
+    recent: true
+
   - title: "When Do PEFT Adaptations Leak Structure? Measuring Black-Box Structural Bounds in Public-Base Model Services"
     venue: "arXiv"
     year: 2026
@@ -69,14 +93,6 @@ papers:
     year: 2026
     kind: preprint
     url: "https://arxiv.org/abs/2603.03677"
-    citations: 0
-    recent: true
-
-  - title: "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs"
-    venue: "arXiv"
-    year: 2025
-    kind: preprint
-    url: "https://arxiv.org/abs/2508.17825"
     citations: 0
     recent: true
 

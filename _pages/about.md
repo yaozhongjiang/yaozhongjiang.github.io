@@ -68,11 +68,16 @@ redirect_from:
     <section class="panel">
       <h2>Recently published papers</h2>
       <ul class="recent-papers">
+        {% assign latest_year = site.data.publications.papers | map: "year" | sort | last %}
         {% for paper in site.data.publications.papers %}
-          {% if paper.recent and paper.url != "" %}
+          {% if paper.year == latest_year %}
           <li>
             <span class="paper-year">{{ paper.year }}</span>
-            <a href="{{ paper.url }}">{{ paper.title }}</a>
+            {% if paper.url != "" %}
+              <a href="{{ paper.url }}">{{ paper.title }}</a>
+            {% else %}
+              {{ paper.title }}
+            {% endif %}
           </li>
           {% endif %}
         {% endfor %}
