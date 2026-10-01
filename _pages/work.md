@@ -35,7 +35,7 @@ author_profile: false
   </ul>
 
   <h2>Patents</h2>
-  <p class="stat-note">Chinese invention applications that list 姚忠将 (Zhongjiang Yao) as an inventor. The year is the filing year.</p>
+  <p class="stat-note">Invention applications that list Zhongjiang Yao as an inventor. The year is the filing year.</p>
   <div class="pub-table-wrap">
     <table class="pub-table">
       <thead>
