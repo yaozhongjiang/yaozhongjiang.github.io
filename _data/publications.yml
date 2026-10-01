@@ -1,0 +1,252 @@
+# Papers already listed on the site (_pages/about.md).
+# Citation counts are OpenAlex cited_by_count values matched by title and DOI
+# (author ORCID 0000-0001-6583-9526, already in _config.yml).
+# Google Scholar did not return a page. Papers with no matched count omit citations.
+# The Computer Journal year is not written in about.md; 2024 is the OpenAlex
+# publication year of DOI 10.1093/comjnl/bxae124, which about.md already links
+# (on the adjacent SwordEcho bullet). Those two official URLs were swapped in
+# about.md and are attached here to the matching titles.
+stats:
+  citations: 273
+  h_index: 6
+  i10_index: 5
+  source: "OpenAlex"
+
+# Paper counts include every listed paper. A year with no papers or no
+# matched citations is stored as 0 so the yearly lines stay continuous.
+yearly:
+  - year: 2014
+    papers: 1
+    citations: 1
+  - year: 2015
+    papers: 2
+    citations: 0
+  - year: 2016
+    papers: 1
+    citations: 0
+  - year: 2017
+    papers: 1
+    citations: 0
+  - year: 2018
+    papers: 3
+    citations: 153
+  - year: 2019
+    papers: 3
+    citations: 33
+  - year: 2020
+    papers: 1
+    citations: 64
+  - year: 2021
+    papers: 1
+    citations: 0
+  - year: 2022
+    papers: 0
+    citations: 0
+  - year: 2023
+    papers: 0
+    citations: 0
+  - year: 2024
+    papers: 6
+    citations: 18
+  - year: 2025
+    papers: 4
+    citations: 4
+  - year: 2026
+    papers: 2
+    citations: 0
+
+papers:
+  - title: "When Do PEFT Adaptations Leak Structure? Measuring Black-Box Structural Bounds in Public-Base Model Services"
+    venue: "arXiv"
+    year: 2026
+    kind: preprint
+    url: "https://arxiv.org/abs/2608.05036"
+    citations: 0
+    recent: true
+
+  - title: "MIND: Unified Inquiry and Diagnosis RL with Criteria Grounded Clinical Supports for Psychiatric Consultation"
+    venue: "arXiv"
+    year: 2026
+    kind: preprint
+    url: "https://arxiv.org/abs/2603.03677"
+    citations: 0
+    recent: true
+
+  - title: "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs"
+    venue: "arXiv"
+    year: 2025
+    kind: preprint
+    url: "https://arxiv.org/abs/2508.17825"
+    citations: 0
+    recent: true
+
+  - title: "PrivacyShadow: Unveiling Privacy Vulnerabilities in VLMs through MIAs"
+    venue: "ACM MM 2025"
+    year: 2025
+    kind: preprint
+    url: ""
+    recent: false
+
+  - title: "Enhancing LLM Jailbreak: A Dual-Strategy Approach of Token Suppression and Induction"
+    venue: "CSCWD 2025"
+    year: 2025
+    kind: conference
+    url: "https://doi.org/10.1109/cscwd64889.2025.11033375"
+    citations: 2
+    recent: true
+
+  - title: "Emotion-aware Structural Enhancement Graph Auto-Encoder for Rumor Detection"
+    venue: "ICASSP 2025"
+    year: 2025
+    kind: conference
+    url: "https://ieeexplore.ieee.org/abstract/document/10889918"
+    citations: 2
+    recent: true
+
+  - title: "Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent"
+    venue: "The Computer Journal"
+    year: 2024
+    kind: journal
+    url: "https://doi.org/10.1093/comjnl/bxae124"
+    citations: 9
+    recent: false
+
+  - title: "Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent"
+    venue: "arXiv"
+    year: 2024
+    kind: preprint
+    url: "https://arxiv.org/abs/2405.03654"
+    citations: 1
+    recent: false
+
+  - title: "SwordEcho: A LLM Jailbreaking Optimization Strategy Driven by Reinforcement Learning"
+    venue: "CSAI 2024"
+    year: 2024
+    kind: conference
+    url: "https://dl.acm.org/doi/10.1145/3709026.3709115"
+    citations: 1
+    recent: false
+
+  - title: "IntentObfuscator: A jailbreaking method via confuses LLM with prompts"
+    venue: "ESORICS 2024"
+    year: 2024
+    kind: conference
+    url: "https://link.springer.com/chapter/10.1007/978-3-031-70903-6_8"
+    citations: 4
+    recent: false
+
+  - title: "EthGAN: Improving Ethereum Account Classification Accurary via Data Augmentation"
+    venue: "IJCNN 2024"
+    year: 2024
+    kind: conference
+    url: "https://ieeexplore.ieee.org/document/10650065"
+    citations: 2
+    recent: false
+
+  - title: "Reinforcement Learning-Powered Effectiveness and Effciency Few-Shot Jailbreaking Attack LLMs"
+    venue: "IEEE ISPA 2024"
+    year: 2024
+    kind: conference
+    url: "https://ieeexplore.ieee.org/document/10885191"
+    citations: 1
+    recent: false
+
+  - title: "Overview of blockchain consensus algorithm"
+    venue: "Journal of Cyber Security"
+    year: 2021
+    kind: journal
+    url: "http://dx.doi.org/10.19363/J.cnki.cn10-1380/tn.2021.03.06"
+    recent: false
+
+  - title: "Encrypted traffic classification based on Gaussian mixture models and Hidden Markov Models"
+    venue: "JNCA"
+    year: 2020
+    kind: journal
+    url: "https://doi.org/10.1016/j.jnca.2020.102711"
+    citations: 64
+    recent: false
+
+  - title: "A privacy preserved and credible network protocol"
+    venue: "JPDC"
+    year: 2019
+    kind: journal
+    url: "https://doi.org/10.1016/j.jpdc.2019.06.002"
+    citations: 14
+    recent: false
+
+  - title: "An Invisible Flow Watermarking for Traffic Tracking: A Hidden Markov Model Approach"
+    venue: "ICC"
+    year: 2019
+    kind: conference
+    url: "https://doi.org/10.1109/ICC.2019.8761135"
+    citations: 5
+    recent: false
+
+  - title: "A New Bitcoin Address Association Method Using a Two-Level Learner Model"
+    venue: "ICA3PP"
+    year: 2019
+    kind: conference
+    url: "https://doi.org/10.1007/978-3-030-38961-1_31"
+    citations: 14
+    recent: false
+
+  - title: "Encrypted Traffic Classification with a Convolutional Long Short-Term Memory Neural Network"
+    venue: "HPCC/SmartCity/DSS"
+    year: 2018
+    kind: conference
+    url: "https://doi.org/10.1109/HPCC/SmartCity/DSS.2018.00074"
+    citations: 140
+    recent: false
+
+  - title: "Meek-Based Tor Traffic Identification with Hidden Markov Model"
+    venue: "HPCC/SmartCity/DSS"
+    year: 2018
+    kind: conference
+    url: "https://doi.org/10.1109/HPCC/SmartCity/DSS.2018.00075"
+    citations: 13
+    recent: false
+
+  - title: "Research Review on Traffic Obfuscation and Its Corresponding Identification and Tracking Technologies"
+    venue: "Journal of Software"
+    year: 2018
+    kind: journal
+    url: "http://dx.doi.org/10.13328/j.cnki.jos.005620"
+    recent: false
+
+  - title: "A Summary of the Theory and Application of BlockChain"
+    venue: "e-Science Technology & Application"
+    year: 2017
+    kind: journal
+    url: "https://dx.doi.org/10.19533/j.issn1000-3762.2021.01.011"
+    recent: false
+
+  - title: "Performance Evaluation and Analysis of the Virtual Networks Built by Different Virtual Machine Managers"
+    venue: "HPCC/SmartCity/DSS"
+    year: 2016
+    kind: conference
+    url: "https://doi.org/10.1109/HPCC-SmartCity-DSS.2016.0223"
+    citations: 0
+    recent: false
+
+  - title: "Performance Investigation and Comparison between Virtual Networks and Physical Networks Based on an Advanced Testbed Network"
+    venue: "CIT/IUCC/DASC/PICom"
+    year: 2015
+    kind: conference
+    url: "https://doi.org/10.1109/CIT/IUCC/DASC/PICOM.2015.181"
+    citations: 0
+    recent: false
+
+  - title: "DESIGN AND IMPLEMENTATION OF IS-IS NETWORK-ORIENTED NETMONITOR SYSTEM"
+    venue: "Computer Applications and Software"
+    year: 2015
+    kind: journal
+    url: "https://qikan.cqvip.com/Qikan/Article/Detail?id=665936149"
+    recent: false
+
+  - title: "On the Prevention of Invalid Route Injection Attack"
+    venue: "IIP"
+    year: 2014
+    kind: conference
+    url: "http://dx.doi.org/10.1007/978-3-662-44980-6_33"
+    citations: 1
+    recent: false

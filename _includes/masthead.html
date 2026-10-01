@@ -4,14 +4,11 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
-            <a href="https://yaozhongjiang.github.io/" target="_self">
-              <img class="svg" src="/images/en.svg" width="20pt"> 
-              English
-            </a>
-          </li>
           {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign link_index = link.url | append: 'index.html' %}
+            <li class="masthead__menu-item">
+              <a href="{{ link.url | relative_url }}" target="_self"{% if page.url == link.url or page.url == link_index %} class="is-current"{% endif %}>{{ link.title }}</a>
+            </li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>

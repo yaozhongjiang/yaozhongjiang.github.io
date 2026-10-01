@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "yaozhongjiang"
-description              : "Research scientist in IIE,CAS. Focusing on LLM multi-Agents collaboration, LLM security assessment, Blockchain security analysis and network traffic identification."
+description              : "Postdoctoral researcher at King's College London. Focusing on LLM multi-Agents collaboration, LLM security assessment, Blockchain security analysis and network traffic identification."
 repository               : "yaozhongjiang/yaozhongjiang.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -23,12 +23,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zhongjiang Yao"
   avatar           : "images/yaozhongjiang.jpg"
-  bio              : "Institute of Information Engineering, Chinese Academy of Sciences"
-  location         : "Beijing, China"
+  bio              : "King's College London"
+  location         : "BUSH HOUSE, 30 Aldwych, London, WC2B 4BG"
   employer         : #"Hefei General Machinery Research Institute"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=mNQ2160AAAAJ"
-  email            : "yaozhongjiang@iie.ac.cn"
+  email            : "zhongjiang.yao@kcl.ac.uk"
   researchgate     : "https://www.researchgate.net/profile/Yao-Zhongjiang"
   uri              : 
   bitbucket        :
@@ -43,7 +43,7 @@ author:
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
+  linkedin         : "zhongjiang-yao-b0756a406"
   dblp             : "https://dblp.org/pid/152/5483.html"
   orcid            : "https://orcid.org/0000-0001-6583-9526"
   pinterest        :

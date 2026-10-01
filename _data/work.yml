@@ -1,0 +1,54 @@
+# Work experience as written on the home page.
+# Focus and contributions stay inside the home-page biography.
+# Patents are Chinese applications that list Zhongjiang Yao as an inventor.
+# Titles and applicants are given in English. The year is the filing year.
+items:
+  - dates: "2026.04 – Now"
+    place: "Postdoctoral Researcher, King's College London (KCL), London, United Kingdom"
+    logo: "/images/logos/kcl.svg"
+    logo_alt: "King's College London"
+    focus: "Large models, multi-agent collaboration, and LLM privacy and security."
+    contribution: "I conduct research on multi-agent collaboration and on the privacy and security of large language models. I am a Senior PC of AAMAS and a reviewer for ICLR and ACL."
+  - dates: "2021.12 – 2026.04"
+    place: "Institute of Information Sciences, Chinese Academy of Sciences, Beijing, China"
+    logo: "/images/logos/cas.png"
+    logo_alt: "Chinese Academy of Sciences"
+    focus: "LLM security, blockchain, and rumor detection."
+    contribution: "On LLM security, I published work on jailbreak attacks. On blockchain, I published a data-augmentation method for classifying Ethereum accounts. I also published a graph model for rumor detection."
+  - dates: "2019.07 – 2021.12"
+    place: "Beijing Huawei Digital Technologies Co., Ltd., Beijing, China"
+    logo: "/images/logos/huawei.svg"
+    logo_alt: "Huawei"
+    focus: "Information retrieval."
+    contribution: "I took part in information-retrieval projects. That experience sparked my interest in LLM-based agents, natural language processing, and large language models."
+patents:
+  - title: "Transaction tracking method and system for cross-chain bridges"
+    number: "CN121961564A"
+    year: 2025
+    applicant: "Institute of Information Engineering, Chinese Academy of Sciences"
+    url: "https://patents.google.com/patent/CN121961564A/en"
+  - title: "Method and system for detecting large models based on jailbreak attacks"
+    number: "CN120297358A"
+    year: 2025
+    applicant: "Institute of Information Engineering, Chinese Academy of Sciences"
+    url: "https://patents.google.com/patent/CN120297358A/en"
+  - title: "Method and system for tracking abnormal coin-mixing transactions based on adversarial transfer learning"
+    number: "CN118350934A"
+    year: 2024
+    applicant: "Institute of Information Engineering, Chinese Academy of Sciences"
+    url: "https://patents.google.com/patent/CN118350934A/en"
+  - title: "Method and system for recognizing Ethereum account identities based on data augmentation"
+    number: "CN117689386A"
+    year: 2023
+    applicant: "Institute of Information Engineering, Chinese Academy of Sciences"
+    url: "https://patents.google.com/patent/CN117689386A/en"
+  - title: "Method and system for detecting link anomalies in an IS-IS network"
+    number: "CN107222359A"
+    year: 2017
+    applicant: "Institute of Computing Technology, Chinese Academy of Sciences"
+    url: "https://patents.google.com/patent/CN107222359A/en"
+  - title: "Method, system, apparatus, and chip for detecting link anomalies in an IS-IS network"
+    number: "CN106059850A"
+    year: 2016
+    applicant: "Institute of Computing Technology, Chinese Academy of Sciences"
+    url: "https://patents.google.com/patent/CN106059850A/en"

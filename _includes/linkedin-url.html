@@ -1,0 +1,7 @@
+{% if site.author.linkedin contains "://" %}
+  {% assign linkedin_profile = site.author.linkedin %}
+{% else %}
+  {% assign linkedin_profile = "https://www.linkedin.com/in/" | append: site.author.linkedin | append: "/" %}
+{% endif %}
+{% assign linkedin_q = linkedin_profile | replace: ":", "%3A" | replace: "/", "%2F" %}
+{% assign linkedin_url = "https://www.google.com/search?btnI=1&q=" | append: linkedin_q %}
