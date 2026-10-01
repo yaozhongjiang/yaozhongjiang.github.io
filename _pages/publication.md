@@ -23,10 +23,10 @@ author_profile: false
 
   <p class="profile-links">
     {% if site.author.dblp %}
-      <a href="{{ site.author.dblp }}"><i class="ai ai-dblp" aria-hidden="true"></i> DBLP</a>
+      <a href="{{ site.author.dblp }}"><img class="brand-icon" src="{{ '/images/logos/dblp.png' | relative_url }}" alt="" width="48" height="18"> DBLP</a>
     {% endif %}
     {% if site.author.googlescholar %}
-      <a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
+      <a href="{{ site.author.googlescholar }}"><img class="brand-icon brand-icon--scholar" src="{{ '/images/logos/scholar.svg' | relative_url }}" alt="" width="18" height="18"> Google Scholar</a>
     {% endif %}
     {% if site.author.linkedin %}
       <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>

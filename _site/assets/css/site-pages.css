@@ -63,6 +63,25 @@
   color: #7a8288;
 }
 
+.identity-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0.55rem 0 0;
+}
+
+.identity-links a {
+  display: inline-flex;
+  line-height: 0;
+}
+
+.identity-links img {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
 .home-bio p,
 .home-bio li {
   font-size: 1em;
@@ -144,9 +163,15 @@
   background: #fafafa;
 }
 
-.profile-links .ai {
-  font-size: 1.05em;
-  line-height: 1;
+.profile-links img.brand-icon {
+  display: block;
+  height: 18px;
+  width: auto;
+}
+
+.profile-links img.brand-icon--scholar {
+  width: 18px;
+  height: 18px;
 }
 
 .profile-links a:hover {
