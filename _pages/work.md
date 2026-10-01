@@ -35,29 +35,26 @@ author_profile: false
   </ul>
 
   <h2>Patents</h2>
+  <p class="stat-note">Chinese invention applications that list 姚忠将 (Zhongjiang Yao) as an inventor. The year is the filing year.</p>
   <div class="pub-table-wrap">
     <table class="pub-table">
       <thead>
         <tr>
           <th>Title</th>
           <th>Number</th>
+          <th>Applicant</th>
           <th class="num">Year</th>
         </tr>
       </thead>
       <tbody>
-        {% if site.data.work.patents.size > 0 %}
-          {% for patent in site.data.work.patents %}
-          <tr>
-            <td>{% if patent.url %}<a href="{{ patent.url }}">{{ patent.title }}</a>{% else %}{{ patent.title }}{% endif %}</td>
-            <td>{{ patent.number }}</td>
-            <td class="num">{{ patent.year }}</td>
-          </tr>
-          {% endfor %}
-        {% else %}
-          <tr>
-            <td colspan="3">No patent listing Zhongjiang Yao was found in Google Patents.</td>
-          </tr>
-        {% endif %}
+        {% for patent in site.data.work.patents %}
+        <tr>
+          <td>{% if patent.url %}<a href="{{ patent.url }}">{{ patent.title }}</a>{% else %}{{ patent.title }}{% endif %}</td>
+          <td>{{ patent.number }}</td>
+          <td>{{ patent.applicant }}</td>
+          <td class="num">{{ patent.year }}</td>
+        </tr>
+        {% endfor %}
       </tbody>
     </table>
   </div>

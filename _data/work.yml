@@ -1,7 +1,6 @@
 # Work experience as written on the home page.
-# Focus and contributions stay inside that text. No award or patent
-# was found in the site or in a Google Patents inventor search, so those
-# fields are omitted rather than filled in.
+# Focus and contributions stay inside the home-page biography.
+# Patents are Chinese applications that list 姚忠将 (Zhongjiang Yao) as an inventor.
 items:
   - dates: "2026.04 – Now"
     place: "Postdoctoral Researcher, King's College London (KCL), London, United Kingdom"
@@ -21,4 +20,34 @@ items:
     logo_alt: "Huawei"
     focus: "Information retrieval."
     contribution: "Took part in information retrieval projects. That work led into later research on LLM-based agents, natural language processing, and large language models."
-patents: []
+patents:
+  - title: "一种面向跨链桥的交易追踪方法及系统"
+    number: "CN121961564A"
+    year: 2025
+    applicant: "中国科学院信息工程研究所"
+    url: "https://patents.google.com/patent/CN121961564A/zh"
+  - title: "基于越狱攻击的大模型检测方法及系统"
+    number: "CN120297358A"
+    year: 2025
+    applicant: "中国科学院信息工程研究所"
+    url: "https://patents.google.com/patent/CN120297358A/zh"
+  - title: "基于对抗迁移学习的异常混币交易追踪方法及系统"
+    number: "CN118350934A"
+    year: 2024
+    applicant: "中国科学院信息工程研究所"
+    url: "https://patents.google.com/patent/CN118350934A/zh"
+  - title: "一种基于数据增强的以太坊账户身份识别方法及系统"
+    number: "CN117689386A"
+    year: 2023
+    applicant: "中国科学院信息工程研究所"
+    url: "https://patents.google.com/patent/CN117689386A/zh"
+  - title: "一种IS-IS网络中的链路异常检测方法及系统"
+    number: "CN107222359A"
+    year: 2017
+    applicant: "中国科学院计算技术研究所"
+    url: "https://patents.google.com/patent/CN107222359A/zh"
+  - title: "一种IS-IS网络中的链路异常检测方法、系统、装置、芯片"
+    number: "CN106059850A"
+    year: 2016
+    applicant: "中国科学院计算技术研究所"
+    url: "https://patents.google.com/patent/CN106059850A/zh"
