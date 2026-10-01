@@ -23,10 +23,10 @@ author_profile: false
 
   <p class="profile-links">
     {% if site.author.dblp %}
-      <a href="{{ site.author.dblp }}">DBLP</a>
+      <a href="{{ site.author.dblp }}"><i class="ai ai-dblp" aria-hidden="true"></i> DBLP</a>
     {% endif %}
     {% if site.author.googlescholar %}
-      <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+      <a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
     {% endif %}
     {% if site.author.linkedin %}
       <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
@@ -36,18 +36,22 @@ author_profile: false
   <div class="two-col stat-grid">
     <section class="panel">
       <h2>Papers</h2>
+      <div class="year-chart" data-key="papers" aria-label="Papers by year"></div>
       <p><strong>Journal papers</strong> {{ journal_count }}</p>
       <p><strong>Conference papers</strong> {{ conference_count }}</p>
       <p><strong>Preprints</strong> {{ preprint_count }}</p>
     </section>
     <section class="panel">
       <h2>Citations</h2>
+      <div class="year-chart" data-key="citations" aria-label="Citations by year"></div>
       <p><strong>Citations</strong> {{ site.data.publications.stats.citations }}</p>
       <p><strong>h-index</strong> {{ site.data.publications.stats.h_index }}</p>
       <p><strong>i10-index</strong> {{ site.data.publications.stats.i10_index }}</p>
     </section>
   </div>
-  <p class="stat-note">Citation totals are OpenAlex counts for the papers listed here (ORCID {{ site.author.orcid }}). A dash means no citation count was found. Google Scholar did not return numbers.</p>
+  <p class="stat-note">Lines show papers and known citation counts by publication year. A blank citation point means that year’s counts were not found. Totals use OpenAlex (ORCID {{ site.author.orcid }}). Google Scholar did not return numbers.</p>
+  <script id="yearly-data" type="application/json">{{ site.data.publications.yearly | jsonify }}</script>
+  <script src="{{ '/assets/js/year-charts.js' | relative_url }}"></script>
 
   <div class="pub-table-wrap">
     <table class="pub-table">

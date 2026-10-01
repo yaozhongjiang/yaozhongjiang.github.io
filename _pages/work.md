@@ -10,8 +10,13 @@ author_profile: false
   <ul class="work-list">
     {% for job in site.data.work.items %}
     <li>
-      <span class="work-dates">{{ job.dates }}</span>
-      <span>{{ job.place }}</span>
+      {% if job.logo %}
+        <img class="work-logo" src="{{ job.logo | relative_url }}" alt="{{ job.logo_alt }}">
+      {% endif %}
+      <span class="work-text">
+        <span class="work-dates">{{ job.dates }}</span>
+        <span>{{ job.place }}</span>
+      </span>
     </li>
     {% endfor %}
   </ul>

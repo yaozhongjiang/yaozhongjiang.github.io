@@ -2,7 +2,13 @@
 items:
   - dates: "2026.04 – Now"
     place: "Postdoctoral Researcher, King's College London (KCL), London, United Kingdom"
+    logo: "/images/logos/kcl.svg"
+    logo_alt: "King's College London"
   - dates: "2021.12 – 2026.04"
     place: "Institute of Information Sciences, Chinese Academy of Sciences, Beijing, China"
+    logo: "/images/logos/cas.png"
+    logo_alt: "Chinese Academy of Sciences"
   - dates: "2019.07 – 2021.12"
     place: "Beijing Huawei Digital Technologies Co., Ltd., Beijing, China"
+    logo: "/images/logos/huawei.svg"
+    logo_alt: "Huawei"

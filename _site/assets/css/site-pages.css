@@ -22,31 +22,44 @@
 
 .home-hero {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.75rem;
   align-items: flex-start;
   margin-bottom: 1.75rem;
 }
 
+.home-identity {
+  flex: 0 0 264px;
+  width: 264px;
+  text-align: center;
+}
+
 .home-avatar {
-  width: 132px;
-  height: 132px;
+  display: block;
+  width: 264px;
+  height: 264px;
   object-fit: cover;
   border-radius: 4px;
-  flex: 0 0 auto;
   border: 1px solid #e6e7e8;
 }
 
-.home-bio h1 {
-  margin: 0 0 0.2rem;
+.home-identity h1 {
+  margin: 0.65rem 0 0.15rem;
   padding: 0;
   border: 0;
-  font-size: 1.7em;
+  font-size: 1.45em;
   line-height: 1.2;
   color: #494e52;
 }
 
+.home-identity h1:before {
+  content: none;
+  display: none;
+  height: 0;
+  margin: 0;
+}
+
 .home-affiliation {
-  margin: 0 0 0.75rem;
+  margin: 0;
   color: #7a8288;
 }
 
@@ -120,7 +133,9 @@
 }
 
 .profile-links a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   padding: 0.35rem 0.75rem;
   border: 1px solid #d5d8db;
   border-radius: 4px;
@@ -129,8 +144,23 @@
   background: #fafafa;
 }
 
+.profile-links .ai {
+  font-size: 1.05em;
+  line-height: 1;
+}
+
 .profile-links a:hover {
   text-decoration: underline;
+}
+
+.year-chart {
+  margin: 0 0 0.6rem;
+}
+
+.year-chart svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .stat-grid .panel p {
@@ -194,8 +224,23 @@
 }
 
 .work-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
   padding: 0.85rem 0;
   border-bottom: 1px solid #e6e7e8;
+}
+
+.work-logo {
+  width: 72px;
+  height: 48px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.work-text {
+  display: block;
+  min-width: 0;
 }
 
 .work-dates {
@@ -237,9 +282,18 @@
     gap: 0.9rem;
   }
 
+  .home-identity,
   .home-avatar {
-    width: 96px;
-    height: 96px;
+    width: 192px;
+  }
+
+  .home-avatar {
+    height: 192px;
+  }
+
+  .home-identity {
+    flex-basis: auto;
+    margin: 0 auto;
   }
 
   .activity-list li,

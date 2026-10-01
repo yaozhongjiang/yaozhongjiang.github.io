@@ -7,12 +7,80 @@
 # (on the adjacent SwordEcho bullet). Those two official URLs were swapped in
 # about.md and are attached here to the matching titles.
 stats:
-  citations: 272
+  citations: 273
   h_index: 6
   i10_index: 5
   source: "OpenAlex"
 
+# Paper counts include every listed paper. Citation points sum known counts only.
+# 2017 and 2021 have papers whose citation counts were not found, so those
+# citation points are left blank instead of drawn as zero.
+yearly:
+  - year: 2014
+    papers: 1
+    citations: 1
+  - year: 2015
+    papers: 2
+    citations: 0
+  - year: 2016
+    papers: 1
+    citations: 0
+  - year: 2017
+    papers: 1
+    citations:
+  - year: 2018
+    papers: 3
+    citations: 153
+  - year: 2019
+    papers: 3
+    citations: 33
+  - year: 2020
+    papers: 1
+    citations: 64
+  - year: 2021
+    papers: 1
+    citations:
+  - year: 2022
+    papers: 0
+    citations: 0
+  - year: 2023
+    papers: 0
+    citations: 0
+  - year: 2024
+    papers: 6
+    citations: 18
+  - year: 2025
+    papers: 4
+    citations: 4
+  - year: 2026
+    papers: 2
+    citations: 0
+
 papers:
+  - title: "When Do PEFT Adaptations Leak Structure? Measuring Black-Box Structural Bounds in Public-Base Model Services"
+    venue: "arXiv"
+    year: 2026
+    kind: preprint
+    url: "https://arxiv.org/abs/2608.05036"
+    citations: 0
+    recent: true
+
+  - title: "MIND: Unified Inquiry and Diagnosis RL with Criteria Grounded Clinical Supports for Psychiatric Consultation"
+    venue: "arXiv"
+    year: 2026
+    kind: preprint
+    url: "https://arxiv.org/abs/2603.03677"
+    citations: 0
+    recent: true
+
+  - title: "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs"
+    venue: "arXiv"
+    year: 2025
+    kind: preprint
+    url: "https://arxiv.org/abs/2508.17825"
+    citations: 0
+    recent: true
+
   - title: "PrivacyShadow: Unveiling Privacy Vulnerabilities in VLMs through MIAs"
     venue: "ACM MM 2025"
     year: 2025
@@ -42,7 +110,15 @@ papers:
     kind: journal
     url: "https://doi.org/10.1093/comjnl/bxae124"
     citations: 9
-    recent: true
+    recent: false
+
+  - title: "Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent"
+    venue: "arXiv"
+    year: 2024
+    kind: preprint
+    url: "https://arxiv.org/abs/2405.03654"
+    citations: 1
+    recent: false
 
   - title: "SwordEcho: A LLM Jailbreaking Optimization Strategy Driven by Reinforcement Learning"
     venue: "CSAI 2024"
@@ -50,7 +126,7 @@ papers:
     kind: conference
     url: "https://dl.acm.org/doi/10.1145/3709026.3709115"
     citations: 1
-    recent: true
+    recent: false
 
   - title: "IntentObfuscator: A jailbreaking method via confuses LLM with prompts"
     venue: "ESORICS 2024"
@@ -58,7 +134,7 @@ papers:
     kind: conference
     url: "https://link.springer.com/chapter/10.1007/978-3-031-70903-6_8"
     citations: 4
-    recent: true
+    recent: false
 
   - title: "EthGAN: Improving Ethereum Account Classification Accurary via Data Augmentation"
     venue: "IJCNN 2024"

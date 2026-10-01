@@ -1,13 +1,13 @@
 # Activities requested for the home page. Year is 2026; the previous site
 # did not date these events.
 items:
-  - date: "3 Aug 2026"
-    text: "attended Oxford University BOLD"
-  - date: "10 Sep 2026"
-    text: "attended UCL SOFAIR Launch Event"
-  - date: "5–9 Oct 2026"
-    text: "attended Oxford University BOLD Collaboration Week and organized the Multi-agent Distributed Security Workshop"
-  - date: "19 Oct 2026"
-    text: "Olympia AI Live"
   - date: "24–25 Nov 2026"
     text: "UKAIRS 26, organized by the University of Edinburgh"
+  - date: "19 Oct 2026"
+    text: "Olympia AI Live"
+  - date: "5–9 Oct 2026"
+    text: "attended Oxford University BOLD Collaboration Week and organized the Multi-agent Distributed Security Workshop"
+  - date: "10 Sep 2026"
+    text: "attended UCL SOFAIR Launch Event"
+  - date: "3 Aug 2026"
+    text: "attended Oxford University BOLD"
