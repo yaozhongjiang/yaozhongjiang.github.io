@@ -25,7 +25,7 @@ redirect_from:
       </p>
     </div>
     <div class="home-bio">
-      <p>I obtained my Ph.D. from the University of Chinese Academy of Sciences under the supervision of Professor Jingguo Ge. During my Ph.D. studies, I primarily focused on network traffic identification and tracking. After graduation, I worked at Huawei, where I had the opportunity to participate in projects related to information retrieval, which sparked my interest in LLM-based Agents, natural language processing, and large language models (LLMs). I am currently a postdoctoral researcher at King's College London, where I mainly conduct research in the field of large models. To date, I have published more than 10 papers in areas such as deep learning and LLMs. I am a Senior PC of AAMAS and a reviewer for ICLR and ACL.</p>
+      <p>I am a postdoctoral researcher at King's College London. My research centers on multi-agent collaboration and LLM security. I received my Ph.D. from the University of Chinese Academy of Sciences, where I studied network traffic identification and tracking, and I later worked at Huawei on information retrieval. That work led me into natural language processing and large language models. I have published more than ten papers on deep learning and large language models, and I serve as a Senior PC of AAMAS and as a reviewer for ICLR and ACL.</p>
       <p>My research fields involve：</p>
       <ul>
         <li>Multi Agent Collaboration</li>
