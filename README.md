@@ -1,10 +1,13 @@
-# Zhongjiang Yao
+# yaozhongjiang.github.io
 
-Zhongjiang Yao is a postdoctoral researcher at King's College London. The homepage is [https://yaozhongjiang.github.io/](https://yaozhongjiang.github.io/).
+Academic homepage published with GitHub Pages from the `main` branch: [yaozhongjiang.github.io](https://yaozhongjiang.github.io/).
 
-Home, Publications, Work, and Contact cover his biography, papers, positions and patents, and academic contact. His research is on multi-agent collaboration, LLM privacy and security, natural language processing, blockchain, and traffic analysis.
+![Page navigation, profile links, and yearly charts](docs/layout.png)
 
-![Home](docs/home.png)
+- **Home** marks finished activities with a check and lists papers from the latest publication year.
+- **Publications** has profile links, publication counts, yearly charts, and the full paper list. A title links out when a URL is present.
+- **Work** shows each role with a logo and a focus line, then a patent table.
+- **Contact** is for academic exchange.
 
 Publications refresh every four months from OpenAlex and Semantic Scholar, using the ORCID in `_config.yml`.
 
