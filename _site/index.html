@@ -178,7 +178,7 @@
           <span>Olympia AI Live<span class="activity-check" aria-hidden="true"></span></span>
         </li>
         
-        <li data-end="2026-10-09">
+        <li data-end="2026-10-09" data-done="true">
           <span class="activity-date">5–9 Oct 2026</span>
           <span>attended Oxford University BOLD Collaboration Week and organized the Multi-agent Distributed Security Workshop<span class="activity-check" aria-hidden="true"></span></span>
         </li>
@@ -202,7 +202,8 @@
           var today = now.getFullYear() + "-" + (month < 10 ? "0" : "") + month + "-" + (day < 10 ? "0" : "") + day;
           var items = document.querySelectorAll(".activity-list li[data-end]");
           for (var i = 0; i < items.length; i++) {
-            if (items[i].getAttribute("data-end") >= today) continue;
+            var finished = items[i].getAttribute("data-done") === "true" || items[i].getAttribute("data-end") < today;
+            if (!finished) continue;
             var mark = items[i].querySelector(".activity-check");
             mark.textContent = "✓";
             mark.setAttribute("aria-label", "Completed");

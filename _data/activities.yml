@@ -9,6 +9,7 @@ items:
     text: "Olympia AI Live"
   - date: "5–9 Oct 2026"
     end: "2026-10-09"
+    done: true
     text: "attended Oxford University BOLD Collaboration Week and organized the Multi-agent Distributed Security Workshop"
   - date: "10 Sep 2026"
     end: "2026-09-10"
