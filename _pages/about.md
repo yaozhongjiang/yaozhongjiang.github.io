@@ -42,7 +42,7 @@ redirect_from:
       <h2>Recent activities</h2>
       <ul class="activity-list">
         {% for item in site.data.activities.items %}
-        <li data-end="{{ item.end }}">
+        <li data-end="{{ item.end }}"{% if item.done %} data-done="true"{% endif %}>
           <span class="activity-date">{{ item.date }}</span>
           <span>{{ item.text }}<span class="activity-check" aria-hidden="true"></span></span>
         </li>
@@ -56,7 +56,8 @@ redirect_from:
           var today = now.getFullYear() + "-" + (month < 10 ? "0" : "") + month + "-" + (day < 10 ? "0" : "") + day;
           var items = document.querySelectorAll(".activity-list li[data-end]");
           for (var i = 0; i < items.length; i++) {
-            if (items[i].getAttribute("data-end") >= today) continue;
+            var finished = items[i].getAttribute("data-done") === "true" || items[i].getAttribute("data-end") < today;
+            if (!finished) continue;
             var mark = items[i].querySelector(".activity-check");
             mark.textContent = "✓";
             mark.setAttribute("aria-label", "Completed");
