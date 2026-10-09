@@ -293,6 +293,14 @@
   margin: 0 0 0.4rem;
 }
 
+.project-name {
+  font-weight: 600;
+}
+
+.project-close {
+  margin: 1.15rem 0 0;
+}
+
 .work-logo {
   width: 72px;
   height: 48px;

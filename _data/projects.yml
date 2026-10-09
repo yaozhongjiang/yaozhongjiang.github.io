@@ -1,0 +1,26 @@
+items:
+  - name: CivilSimulator
+    url: https://github.com/OCTPRISM/CivilSimulator
+    about: >-
+      A playable civilization game and a hands-on society simulation sandbox.
+      You choose a world, walk a 3D scene, talk with nearby characters, and
+      invite friends into the same room. The labs run controllable experiments
+      on population, markets, public opinion, and weather, and a local language
+      model can drive the narrative. The current release is Tech Preview v0.4.0
+      and is invite-only.
+
+  - name: VibeML
+    url: https://github.com/OCTPRISM/VibeML
+    about: >-
+      A natural-language loop from data preparation through to a deployable
+      model. It covers text classification, image classification, visual
+      question answering, reinforcement learning, and instruction tuning. Each
+      round is checked for significance: when the gain stays inside the noise,
+      the system reports no improvement instead of a higher score. It is built
+      for small samples and Chinese text, and it can run entirely on a local
+      machine.
+    highlight: >-
+      The conversation layer is multi-agent. It carries a task from
+      clarification through data, model choice, configuration, training, and a
+      report. If a tool call fails, the same flow falls back to a deterministic
+      state machine.

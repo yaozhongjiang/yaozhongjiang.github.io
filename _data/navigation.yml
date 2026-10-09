@@ -6,6 +6,9 @@ main:
   - title: "Publications"
     url: "/publication/"
 
+  - title: "Project"
+    url: "/project/"
+
   - title: "Work"
     url: "/work/"
 
