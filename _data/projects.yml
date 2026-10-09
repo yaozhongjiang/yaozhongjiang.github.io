@@ -1,6 +1,10 @@
 items:
   - name: CivilSimulator
     url: https://github.com/OCTPRISM/CivilSimulator
+    image: /images/projects/civilsimulator-hero-ancient.png
+    image_alt: "Jiuzhou · Yonghe"
+    image_width: 960
+    image_height: 540
     about: >-
       A playable civilization game and a hands-on society simulation sandbox.
       You choose a world, walk a 3D scene, talk with nearby characters, and
@@ -11,6 +15,10 @@ items:
 
   - name: VibeML
     url: https://github.com/OCTPRISM/VibeML
+    image: /images/projects/vibeml-screenshot.png
+    image_alt: "VibeML interface"
+    image_width: 2800
+    image_height: 1760
     about: >-
       A natural-language loop from data preparation through to a deployable
       model. It covers text classification, image classification, visual
