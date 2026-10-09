@@ -297,6 +297,31 @@
   font-weight: 600;
 }
 
+.project-body {
+  display: grid;
+  grid-template-columns: minmax(200px, 320px) minmax(0, 1fr);
+  column-gap: 1.25rem;
+  align-items: start;
+  margin-top: 0.65rem;
+}
+
+.project-body .work-detail {
+  margin-top: 0;
+}
+
+.project-figure-link {
+  display: block;
+  min-width: 0;
+}
+
+.project-figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e6e7e8;
+  border-radius: 4px;
+}
+
 .project-close {
   margin: 1.15rem 0 0;
 }
@@ -377,5 +402,10 @@
   .contact-list li {
     grid-template-columns: 1fr;
     gap: 0.15rem;
+  }
+
+  .project-body {
+    grid-template-columns: 1fr;
+    row-gap: 0.75rem;
   }
 }

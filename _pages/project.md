@@ -16,11 +16,18 @@ author_profile: false
           <a class="project-name" href="{{ project.url }}">{{ project.name }}</a>
         </span>
       </div>
-      <div class="work-detail">
-        <p><span class="work-label">About</span><span class="work-copy">{{ project.about }}</span></p>
-        {% if project.highlight %}
-        <p><span class="work-label">Highlight</span><span class="work-copy">{{ project.highlight }}</span></p>
+      <div class="project-body">
+        {% if project.image %}
+        <a class="project-figure-link" href="{{ project.url }}">
+          <img class="project-figure" src="{{ project.image | relative_url }}" alt="{{ project.image_alt }}" width="{{ project.image_width }}" height="{{ project.image_height }}">
+        </a>
         {% endif %}
+        <div class="work-detail">
+          <p><span class="work-label">About</span><span class="work-copy">{{ project.about }}</span></p>
+          {% if project.highlight %}
+          <p><span class="work-label">Highlight</span><span class="work-copy">{{ project.highlight }}</span></p>
+          {% endif %}
+        </div>
       </div>
     </li>
     {% endfor %}
