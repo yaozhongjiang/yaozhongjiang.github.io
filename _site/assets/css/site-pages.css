@@ -144,6 +144,34 @@
   font-variant-numeric: tabular-nums;
 }
 
+.activity-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.activity-logos {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 0.35rem;
+  height: 1.45em;
+  white-space: nowrap;
+}
+
+.activity-logos img {
+  display: block;
+  height: 1.15rem;
+  width: auto;
+  max-width: 6.5rem;
+  object-fit: contain;
+}
+
+.activity-copy {
+  min-width: 0;
+}
+
 .activity-check {
   margin-left: 0.35em;
   color: #1a9d3a;
