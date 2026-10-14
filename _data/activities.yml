@@ -4,6 +4,11 @@ items:
   - date: "24–25 Nov 2026"
     end: "2026-11-25"
     text: "UKAIRS 26, organized by the University of Edinburgh"
+    logos:
+      - src: /images/logos/edinburgh.png
+        alt: "University of Edinburgh"
+      - src: /images/logos/ukairs.png
+        alt: "UKAIRS"
   - date: "19 Oct 2026"
     end: "2026-10-19"
     text: "Olympia AI Live"
@@ -11,9 +16,24 @@ items:
     end: "2026-10-09"
     done: true
     text: "attended Oxford University BOLD Collaboration Week and organized the Multi-agent Distributed Security Workshop"
+    logos:
+      - src: /images/logos/oxford.svg
+        alt: "University of Oxford"
+      - src: /images/logos/bold.svg
+        alt: "BOLD"
   - date: "10 Sep 2026"
     end: "2026-09-10"
     text: "attended UCL SOFAIR Launch Event"
+    logos:
+      - src: /images/logos/ucl.png
+        alt: "UCL"
+      - src: /images/logos/sofair.png
+        alt: "SOFAIR"
   - date: "3 Aug 2026"
     end: "2026-08-03"
     text: "attended Oxford University BOLD"
+    logos:
+      - src: /images/logos/oxford.svg
+        alt: "University of Oxford"
+      - src: /images/logos/bold.svg
+        alt: "BOLD"

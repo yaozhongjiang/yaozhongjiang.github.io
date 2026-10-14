@@ -44,7 +44,16 @@ redirect_from:
         {% for item in site.data.activities.items %}
         <li data-end="{{ item.end }}"{% if item.done %} data-done="true"{% endif %}>
           <span class="activity-date">{{ item.date }}</span>
-          <span>{{ item.text }}<span class="activity-check" aria-hidden="true"></span></span>
+          <span class="activity-body">
+            {% if item.logos %}
+            <span class="activity-logos">
+              {% for logo in item.logos %}
+              <img src="{{ logo.src | relative_url }}" alt="{{ logo.alt }}">
+              {% endfor %}
+            </span>
+            {% endif %}
+            <span class="activity-copy">{{ item.text }}<span class="activity-check" aria-hidden="true"></span></span>
+          </span>
         </li>
         {% endfor %}
       </ul>
