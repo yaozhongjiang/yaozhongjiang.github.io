@@ -12,6 +12,9 @@ items:
   - date: "19 Oct 2026"
     end: "2026-10-19"
     text: "Olympia AI Live"
+    logos:
+      - src: /images/logos/ai-live.png
+        alt: "AI LIVE"
   - date: "5–9 Oct 2026"
     end: "2026-10-09"
     done: true
