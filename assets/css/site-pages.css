@@ -63,6 +63,12 @@
   color: #7a8288;
 }
 
+.home-role {
+  margin: 0.12rem 0 0;
+  color: #494e52;
+  font-weight: 600;
+}
+
 .identity-links {
   display: flex;
   justify-content: center;

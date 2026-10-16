@@ -14,6 +14,7 @@ redirect_from:
       <img class="home-avatar" src="{{ '/images/yaozhongjiang.jpg' | relative_url }}" alt="{{ site.author.name }}">
       <h1>{{ site.author.name }}</h1>
       <p class="home-affiliation">{{ site.author.bio }}</p>
+      <p class="home-role">Research Fellow</p>
       <p class="identity-links">
         {% if site.author.linkedin %}
           {% include linkedin-url.html %}
