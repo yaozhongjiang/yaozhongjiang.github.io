@@ -26,15 +26,9 @@ redirect_from:
       </p>
     </div>
     <div class="home-bio">
-      <p>I am a postdoctoral researcher at King's College London. My research centers on multi-agent collaboration and LLM security. I received my Ph.D. from the University of Chinese Academy of Sciences, where I studied network traffic identification and tracking, and I later worked at Huawei on information retrieval. That work led me into natural language processing and large language models. I have published more than ten papers on deep learning and large language models, and I serve as a Senior PC of AAMAS and as a reviewer for ICLR and ACL.</p>
-      <p>My research fields involve：</p>
-      <ul>
-        <li>Multi Agent Collaboration</li>
-        <li>LLM privacy and security</li>
-        <li>Natural Language Processing</li>
-        <li>Blockchain</li>
-        <li>Traffic Analysis</li>
-      </ul>
+      <p markdown="span">I am a **Postdoctoral Researcher at King's College London**, working under the supervision of **Dr. Yali Du**. My research focuses on **Multi-Agent Systems and Large Language Model (LLM) Security**, with particular interests in multi-agent collaboration, agent coordination, and the security and trustworthiness of LLM-based systems.</p>
+      <p markdown="span">I received my Ph.D. from the **University of Chinese Academy of Sciences (UCAS)**, where my research focused on network traffic identification and tracking. I subsequently worked on information retrieval at **Huawei**, which led to my broader research interests in natural language processing and large language models.</p>
+      <p markdown="span">I have published **over ten research papers** in deep learning and large language models. I actively contribute to the research community as a **Senior Program Committee (SPC) member of AAMAS** and a reviewer for leading conferences, including **ICLR and ACL**.</p>
     </div>
   </div>
 
