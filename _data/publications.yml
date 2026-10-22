@@ -47,9 +47,17 @@ yearly:
     papers: 3
     citations: 4
   - year: 2026
-    papers: 5
+    papers: 6
     citations: 0
 papers:
+  - title: "The Local–Global Alignment Paradox: Evaluating Distributed Safety Reconstruction in Multi-Agent Systems"
+    venue: "UKAIRS 26 (UK AI Research Symposium, University of Edinburgh, 24–25 November 2026)"
+    year: 2026
+    kind: "conference"
+    url: ""
+    citations: 0
+    recent: true
+
   - title: "Knowledge-Enhanced Image Captioning with Adaptive Graph-based Multimodal Alignment and LLM"
     venue: "AAAI 2026"
     year: 2026
