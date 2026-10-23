@@ -64,8 +64,8 @@ author_profile: false
           <th class="num">#</th>
           <th>Title</th>
           <th>Venue</th>
-          <th class="num">Year</th>
-          <th class="num">Citations</th>
+          <th class="num" aria-sort="none"><button type="button" class="pub-sort" data-sort="year" aria-pressed="false">Year</button></th>
+          <th class="num" aria-sort="none"><button type="button" class="pub-sort" data-sort="citations" aria-pressed="false">Citation</button></th>
         </tr>
       </thead>
       <tbody>
@@ -87,4 +87,54 @@ author_profile: false
       </tbody>
     </table>
   </div>
+<script>
+  (function () {
+    var table = document.querySelector(".pub-table");
+    if (!table || !table.tBodies[0]) return;
+    var tbody = table.tBodies[0];
+    var buttons = table.querySelectorAll("button.pub-sort");
+    if (!buttons.length) return;
+    var rows = [];
+    for (var i = 0; i < tbody.rows.length; i++) rows.push(tbody.rows[i]);
+
+    function numberIn(row, col) {
+      var text = row.cells[col].textContent.replace(/^\s+|\s+$/g, "");
+      if (!/^-?\d+$/.test(text)) return null;
+      return parseInt(text, 10);
+    }
+
+    function sortBy(kind) {
+      var col = kind === "year" ? 3 : 4;
+      var ordered = [];
+      for (var i = 0; i < rows.length; i++) ordered.push({ row: rows[i], i: i });
+      ordered.sort(function (a, b) {
+        var av = numberIn(a.row, col);
+        var bv = numberIn(b.row, col);
+        if (av === null && bv === null) return a.i - b.i;
+        if (av === null) return 1;
+        if (bv === null) return -1;
+        if (bv !== av) return bv - av;
+        return a.i - b.i;
+      });
+      for (var n = 0; n < ordered.length; n++) {
+        ordered[n].row.cells[0].textContent = String(n + 1);
+        tbody.appendChild(ordered[n].row);
+      }
+      for (var b = 0; b < buttons.length; b++) {
+        var on = buttons[b].getAttribute("data-sort") === kind;
+        if (on) buttons[b].classList.add("is-active");
+        else buttons[b].classList.remove("is-active");
+        buttons[b].setAttribute("aria-pressed", on ? "true" : "false");
+        var th = buttons[b].parentNode;
+        if (th && th.getAttribute) th.setAttribute("aria-sort", on ? "descending" : "none");
+      }
+    }
+
+    for (var c = 0; c < buttons.length; c++) {
+      buttons[c].addEventListener("click", function () {
+        sortBy(this.getAttribute("data-sort"));
+      });
+    }
+  })();
+</script>
 </div>

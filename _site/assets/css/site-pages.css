@@ -285,6 +285,38 @@
   color: #224b8d;
 }
 
+.pub-table button.pub-sort {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  font-weight: 600;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: inherit;
+  white-space: nowrap;
+}
+
+.pub-table button.pub-sort:hover,
+.pub-table button.pub-sort:focus-visible {
+  color: #224b8d;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.pub-table button.pub-sort.is-active {
+  color: #224b8d;
+}
+
+.pub-table button.pub-sort.is-active::after {
+  content: " \2193";
+}
+
 .work-list,
 .contact-list {
   list-style: none;
