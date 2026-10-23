@@ -177,6 +177,11 @@
   object-fit: contain;
 }
 
+.activity-logos img[alt="ELLIS"] {
+  height: 4.25rem;
+  max-width: 6.2rem;
+}
+
 .activity-copy {
   min-width: 0;
   text-align: left;
