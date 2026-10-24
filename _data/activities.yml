@@ -21,7 +21,7 @@ items:
   - date: "19 Oct 2026"
     end: "2026-10-19"
     actions:
-      - "Olympia AI Live"
+      - "Attended Olympia AI Live"
     logos:
       - src: /images/logos/ai-live.png
         alt: "AI LIVE"
