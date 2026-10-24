@@ -3,13 +3,16 @@
 items:
   - date: "8 Dec 2026"
     end: "2026-12-08"
-    text: 'Programme Chair of Workshop "Multi-Agent AI for Scientific Discovery", ELLIS Unconference 2026 · Paris, France'
+    actions:
+      - 'Programme Chair of Workshop "Multi-Agent AI for Scientific Discovery", ELLIS Unconference 2026 · Paris, France'
     logos:
       - src: /images/logos/ellis.png
         alt: "ELLIS"
   - date: "24–25 Nov 2026"
     end: "2026-11-25"
-    text: "attending UKAIRS 26, organized by the University of Edinburgh; a paper was submitted and accepted"
+    actions:
+      - "Attended UKAIRS 26, organized by the University of Edinburgh"
+      - "A paper was submitted and accepted"
     logos:
       - src: /images/logos/edinburgh.png
         alt: "University of Edinburgh"
@@ -17,14 +20,17 @@ items:
         alt: "UKAIRS"
   - date: "19 Oct 2026"
     end: "2026-10-19"
-    text: "Olympia AI Live"
+    actions:
+      - "Attended Olympia AI Live"
     logos:
       - src: /images/logos/ai-live.png
         alt: "AI LIVE"
   - date: "5–9 Oct 2026"
     end: "2026-10-09"
     done: true
-    text: "attended Oxford University BOLD Collaboration Week and organized the Multi-agent Distributed Security Workshop"
+    actions:
+      - "Attended Oxford University BOLD Collaboration Week"
+      - "Organized the Multi-agent Distributed Security Workshop"
     logos:
       - src: /images/logos/oxford.svg
         alt: "University of Oxford"
@@ -32,7 +38,8 @@ items:
         alt: "BOLD"
   - date: "10 Sep 2026"
     end: "2026-09-10"
-    text: "attended UCL SOFAIR Launch Event"
+    actions:
+      - "Attended UCL SOFAIR Launch Event"
     logos:
       - src: /images/logos/ucl.png
         alt: "UCL"
@@ -40,7 +47,8 @@ items:
         alt: "SOFAIR"
   - date: "3 Aug 2026"
     end: "2026-08-03"
-    text: "attended Oxford University BOLD"
+    actions:
+      - "Attended Oxford University BOLD"
     logos:
       - src: /images/logos/oxford.svg
         alt: "University of Oxford"

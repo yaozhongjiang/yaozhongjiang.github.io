@@ -47,7 +47,7 @@ redirect_from:
               {% endfor %}
             </span>
             {% endif %}
-            <span class="activity-copy">{{ item.text }}<span class="activity-check" aria-hidden="true"></span></span>
+            <span class="activity-copy">{% for action in item.actions %}{{ forloop.index }}. {{ action }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}<span class="activity-check" aria-hidden="true"></span></span>
           </span>
         </li>
         {% endfor %}
