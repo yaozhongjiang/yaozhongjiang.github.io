@@ -17,7 +17,7 @@ AcadHomepage
 
 <p align="center">
     <br>
-    <img src="docs/screenshot.png" width="100%"/>
+    <img src="docs/devices.png" width="100%"/>
     <br>
 </p>
 
