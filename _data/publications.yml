@@ -44,7 +44,7 @@ yearly:
     papers: 6
     citations: 18
   - year: 2025
-    papers: 3
+    papers: 2
     citations: 4
   - year: 2026
     papers: 6
@@ -97,13 +97,6 @@ papers:
     url: "https://arxiv.org/abs/2603.03677"
     citations: 0
     recent: true
-
-  - title: "PrivacyShadow: Unveiling Privacy Vulnerabilities in VLMs through MIAs"
-    venue: "ACM MM 2025"
-    year: 2025
-    kind: "preprint"
-    url: ""
-    recent: false
 
   - title: "Enhancing LLM Jailbreak: A Dual-Strategy Approach of Token Suppression and Induction"
     venue: "CSCWD 2025"
