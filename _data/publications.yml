@@ -44,7 +44,7 @@ yearly:
     papers: 6
     citations: 18
   - year: 2025
-    papers: 2
+    papers: 3
     citations: 4
   - year: 2026
     papers: 6
@@ -95,6 +95,14 @@ papers:
     year: 2026
     kind: "preprint"
     url: "https://arxiv.org/abs/2603.03677"
+    citations: 0
+    recent: true
+
+  - title: "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs"
+    venue: "arXiv"
+    year: 2025
+    kind: "preprint"
+    url: "https://arxiv.org/abs/2508.17825"
     citations: 0
     recent: true
 
