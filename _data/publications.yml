@@ -4,11 +4,11 @@
 # Papers already listed here are kept. Citation totals are OpenAlex
 # author counts. A paper with no matched count omits citations.
 stats:
-  citations: 273
-  h_index: 6
-  i10_index: 5
+  citations: 295
+  h_index: 7
+  i10_index: 6
   source: "OpenAlex"
-  updated: "2026-10-01"
+  updated: "2026-11-06"
 yearly:
   - year: 2014
     papers: 1
@@ -24,13 +24,13 @@ yearly:
     citations: 0
   - year: 2018
     papers: 3
-    citations: 153
+    citations: 168
   - year: 2019
     papers: 3
-    citations: 33
+    citations: 36
   - year: 2020
     papers: 1
-    citations: 64
+    citations: 61
   - year: 2021
     papers: 1
     citations: 0
@@ -42,14 +42,21 @@ yearly:
     citations: 0
   - year: 2024
     papers: 6
-    citations: 18
+    citations: 25
   - year: 2025
     papers: 3
-    citations: 4
+    citations: 5
   - year: 2026
-    papers: 6
+    papers: 7
     citations: 0
 papers:
+  - title: "MIND: An Evidence-State Decision Interface for Criteria-Grounded Psychiatric Inquiry and Diagnosis"
+    venue: "EMNLP 2026"
+    year: 2026
+    kind: "conference"
+    url: "https://doi.org/10.18653/2026.emnlp-main.1417"
+    citations: 0
+
   - title: "The Local–Global Alignment Paradox: Evaluating Distributed Safety Reconstruction in Multi-Agent Systems"
     venue: "UKAIRS 26"
     year: 2026
@@ -119,7 +126,7 @@ papers:
     year: 2025
     kind: "conference"
     url: "https://ieeexplore.ieee.org/abstract/document/10889918"
-    citations: 2
+    citations: 3
     recent: true
 
   - title: "Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent"
@@ -127,7 +134,7 @@ papers:
     year: 2024
     kind: "journal"
     url: "https://doi.org/10.1093/comjnl/bxae124"
-    citations: 9
+    citations: 15
     recent: false
 
   - title: "Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent"
@@ -159,7 +166,7 @@ papers:
     year: 2024
     kind: "conference"
     url: "https://ieeexplore.ieee.org/document/10650065"
-    citations: 2
+    citations: 3
     recent: false
 
   - title: "Reinforcement Learning-Powered Effectiveness and Effciency Few-Shot Jailbreaking Attack LLMs"
@@ -182,7 +189,7 @@ papers:
     year: 2020
     kind: "journal"
     url: "https://doi.org/10.1016/j.jnca.2020.102711"
-    citations: 64
+    citations: 61
     recent: false
 
   - title: "A privacy preserved and credible network protocol"
@@ -198,7 +205,7 @@ papers:
     year: 2019
     kind: "conference"
     url: "https://doi.org/10.1109/ICC.2019.8761135"
-    citations: 5
+    citations: 8
     recent: false
 
   - title: "A New Bitcoin Address Association Method Using a Two-Level Learner Model"
@@ -214,7 +221,7 @@ papers:
     year: 2018
     kind: "conference"
     url: "https://doi.org/10.1109/HPCC/SmartCity/DSS.2018.00074"
-    citations: 140
+    citations: 150
     recent: false
 
   - title: "Meek-Based Tor Traffic Identification with Hidden Markov Model"
@@ -222,7 +229,7 @@ papers:
     year: 2018
     kind: "conference"
     url: "https://doi.org/10.1109/HPCC/SmartCity/DSS.2018.00075"
-    citations: 13
+    citations: 18
     recent: false
 
   - title: "Research Review on Traffic Obfuscation and Its Corresponding Identification and Tracking Technologies"
