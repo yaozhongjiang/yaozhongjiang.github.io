@@ -4,11 +4,11 @@
 # Papers already listed here are kept. Citation totals are OpenAlex
 # author counts. A paper with no matched count omits citations.
 stats:
-  citations: 295
+  citations: 311
   h_index: 7
   i10_index: 6
   source: "OpenAlex"
-  updated: "2026-11-06"
+  updated: "2026-11-13"
 yearly:
   - year: 2014
     papers: 1
@@ -24,13 +24,13 @@ yearly:
     citations: 0
   - year: 2018
     papers: 3
-    citations: 168
+    citations: 170
   - year: 2019
     papers: 3
     citations: 36
   - year: 2020
     papers: 1
-    citations: 61
+    citations: 62
   - year: 2021
     papers: 1
     citations: 0
@@ -42,20 +42,20 @@ yearly:
     citations: 0
   - year: 2024
     papers: 6
-    citations: 25
+    citations: 36
   - year: 2025
     papers: 3
     citations: 5
   - year: 2026
     papers: 7
-    citations: 0
+    citations: 2
 papers:
   - title: "MIND: An Evidence-State Decision Interface for Criteria-Grounded Psychiatric Inquiry and Diagnosis"
     venue: "EMNLP 2026"
     year: 2026
     kind: "conference"
     url: "https://doi.org/10.18653/2026.emnlp-main.1417"
-    citations: 0
+    citations: 1
 
   - title: "The Local–Global Alignment Paradox: Evaluating Distributed Safety Reconstruction in Multi-Agent Systems"
     venue: "UKAIRS 26"
@@ -94,7 +94,7 @@ papers:
     year: 2026
     kind: "preprint"
     url: "https://arxiv.org/abs/2608.05036"
-    citations: 0
+    citations: 1
     recent: true
 
   - title: "MIND: Unified Inquiry and Diagnosis RL with Criteria Grounded Clinical Supports for Psychiatric Consultation"
@@ -134,7 +134,7 @@ papers:
     year: 2024
     kind: "journal"
     url: "https://doi.org/10.1093/comjnl/bxae124"
-    citations: 15
+    citations: 19
     recent: false
 
   - title: "Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent"
@@ -150,7 +150,7 @@ papers:
     year: 2024
     kind: "conference"
     url: "https://dl.acm.org/doi/10.1145/3709026.3709115"
-    citations: 1
+    citations: 4
     recent: false
 
   - title: "IntentObfuscator: A jailbreaking method via confuses LLM with prompts"
@@ -158,7 +158,7 @@ papers:
     year: 2024
     kind: "conference"
     url: "https://link.springer.com/chapter/10.1007/978-3-031-70903-6_8"
-    citations: 4
+    citations: 6
     recent: false
 
   - title: "EthGAN: Improving Ethereum Account Classification Accurary via Data Augmentation"
@@ -166,7 +166,7 @@ papers:
     year: 2024
     kind: "conference"
     url: "https://ieeexplore.ieee.org/document/10650065"
-    citations: 3
+    citations: 4
     recent: false
 
   - title: "Reinforcement Learning-Powered Effectiveness and Effciency Few-Shot Jailbreaking Attack LLMs"
@@ -174,7 +174,7 @@ papers:
     year: 2024
     kind: "conference"
     url: "https://ieeexplore.ieee.org/document/10885191"
-    citations: 1
+    citations: 2
     recent: false
 
   - title: "Overview of blockchain consensus algorithm"
@@ -189,7 +189,7 @@ papers:
     year: 2020
     kind: "journal"
     url: "https://doi.org/10.1016/j.jnca.2020.102711"
-    citations: 61
+    citations: 62
     recent: false
 
   - title: "A privacy preserved and credible network protocol"
@@ -221,7 +221,7 @@ papers:
     year: 2018
     kind: "conference"
     url: "https://doi.org/10.1109/HPCC/SmartCity/DSS.2018.00074"
-    citations: 150
+    citations: 151
     recent: false
 
   - title: "Meek-Based Tor Traffic Identification with Hidden Markov Model"
@@ -229,7 +229,7 @@ papers:
     year: 2018
     kind: "conference"
     url: "https://doi.org/10.1109/HPCC/SmartCity/DSS.2018.00075"
-    citations: 18
+    citations: 19
     recent: false
 
   - title: "Research Review on Traffic Obfuscation and Its Corresponding Identification and Tracking Technologies"
