@@ -322,6 +322,79 @@
   content: " \2193";
 }
 
+.pub-hover {
+  position: fixed;
+  z-index: 40;
+  left: 0;
+  top: 0;
+  width: min(26rem, calc(100vw - 1rem));
+  margin: 0;
+  padding: 0.4rem;
+  background: #fff;
+  border: 1px solid #e6e7e8;
+  border-radius: 6px;
+  box-shadow: 0 12px 32px rgba(36, 42, 54, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px) scale(0.98);
+  transform-origin: center top;
+  transition: opacity 180ms ease-out, transform 180ms ease-out, visibility 0s linear 180ms;
+  pointer-events: none;
+}
+
+.pub-hover.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  transition: opacity 180ms ease-out, transform 180ms ease-out, visibility 0s linear 0s;
+  pointer-events: auto;
+}
+
+.pub-hover.is-open::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8px;
+  top: -8px;
+}
+
+.pub-hover.is-open.is-above::before {
+  top: auto;
+  bottom: -8px;
+}
+
+.pub-hover img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(18rem, 46vh);
+  margin: 0 auto;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.pub-hover-label {
+  margin: 0.35rem 0.15rem 0.05rem;
+  color: #7a8288;
+  font-size: 0.78rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.pub-hover-label[hidden] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pub-hover,
+  .pub-hover.is-open {
+    transition: none;
+    transform: none;
+  }
+}
+
 .work-list,
 .contact-list {
   list-style: none;

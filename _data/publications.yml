@@ -56,6 +56,8 @@ papers:
     kind: "conference"
     url: "https://doi.org/10.18653/2026.emnlp-main.1417"
     citations: 1
+    figure: "/images/papers/mind-architecture.jpg"
+    figure_label: "Figure 3"
 
   - title: "The Local–Global Alignment Paradox: Evaluating Distributed Safety Reconstruction in Multi-Agent Systems"
     venue: "UKAIRS 26"
@@ -72,6 +74,8 @@ papers:
     url: "https://ojs.aaai.org/index.php/AAAI/article/view/38532"
     citations: 0
     recent: true
+    figure: "/images/papers/akgma-architecture.jpg"
+    figure_label: "Figure 2"
 
   - title: "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs"
     venue: "ACL 2026"
@@ -80,6 +84,8 @@ papers:
     url: "https://aclanthology.org/2026.acl-long.2015/"
     citations: 0
     recent: true
+    figure: "/images/papers/fairgamer-overview.jpg"
+    figure_label: "Figure 2"
 
   - title: "PrivacyShadow: Revealing Fine-Tuning Leakage in Vision-Language Models Via Dual-Level Black-Box Attacks"
     venue: "ICASSP 2026"
@@ -96,6 +102,8 @@ papers:
     url: "https://arxiv.org/abs/2608.05036"
     citations: 1
     recent: true
+    figure: "/images/papers/peft-overview.jpg"
+    figure_label: "Figure 1"
 
   - title: "MIND: Unified Inquiry and Diagnosis RL with Criteria Grounded Clinical Supports for Psychiatric Consultation"
     venue: "arXiv"
@@ -104,6 +112,8 @@ papers:
     url: "https://arxiv.org/abs/2603.03677"
     citations: 0
     recent: true
+    figure: "/images/papers/mind-architecture.jpg"
+    figure_label: "Figure 3"
 
   - title: "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs"
     venue: "arXiv"
@@ -112,6 +122,8 @@ papers:
     url: "https://arxiv.org/abs/2508.17825"
     citations: 0
     recent: true
+    figure: "/images/papers/fairgamer-overview.jpg"
+    figure_label: "Figure 2"
 
   - title: "Enhancing LLM Jailbreak: A Dual-Strategy Approach of Token Suppression and Induction"
     venue: "CSCWD 2025"
@@ -136,6 +148,8 @@ papers:
     url: "https://doi.org/10.1093/comjnl/bxae124"
     citations: 19
     recent: false
+    figure: "/images/papers/intent-framework.jpg"
+    figure_label: "Figure 1"
 
   - title: "Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent"
     venue: "arXiv"
@@ -144,6 +158,8 @@ papers:
     url: "https://arxiv.org/abs/2405.03654"
     citations: 1
     recent: false
+    figure: "/images/papers/intent-framework.jpg"
+    figure_label: "Figure 1"
 
   - title: "SwordEcho: A LLM Jailbreaking Optimization Strategy Driven by Reinforcement Learning"
     venue: "CSAI 2024"
@@ -152,6 +168,8 @@ papers:
     url: "https://dl.acm.org/doi/10.1145/3709026.3709115"
     citations: 4
     recent: false
+    figure: "/images/papers/swordecho-overview.jpg"
+    figure_label: "Figure 3"
 
   - title: "IntentObfuscator: A jailbreaking method via confuses LLM with prompts"
     venue: "ESORICS 2024"
@@ -183,6 +201,8 @@ papers:
     kind: "journal"
     url: "http://dx.doi.org/10.19363/J.cnki.cn10-1380/tn.2021.03.06"
     recent: false
+    figure: "/images/papers/consensus-taxonomy.jpg"
+    figure_label: "Figure 3"
 
   - title: "Encrypted traffic classification based on Gaussian mixture models and Hidden Markov Models"
     venue: "JNCA"
@@ -191,6 +211,8 @@ papers:
     url: "https://doi.org/10.1016/j.jnca.2020.102711"
     citations: 62
     recent: false
+    figure: "/images/papers/gmm-clusters.jpg"
+    figure_label: "Figure 1"
 
   - title: "A privacy preserved and credible network protocol"
     venue: "JPDC"
@@ -199,6 +221,8 @@ papers:
     url: "https://doi.org/10.1016/j.jpdc.2019.06.002"
     citations: 14
     recent: false
+    figure: "/images/papers/pcnp-architecture.jpg"
+    figure_label: "Figure 2"
 
   - title: "An Invisible Flow Watermarking for Traffic Tracking: A Hidden Markov Model Approach"
     venue: "ICC"
@@ -276,3 +300,5 @@ papers:
     url: "http://dx.doi.org/10.1007/978-3-662-44980-6_33"
     citations: 1
     recent: false
+    figure: "/images/papers/invalid-route-injection.jpg"
+    figure_label: "Fig. 1"

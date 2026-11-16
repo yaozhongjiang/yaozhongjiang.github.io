@@ -508,6 +508,10 @@ def merge_publications(existing, fetched, summary, updated):
             item["citations"] = paper["citations"]
         if "recent" in paper:
             item["recent"] = paper["recent"]
+        if paper.get("figure"):
+            item["figure"] = paper["figure"]
+        if paper.get("figure_label"):
+            item["figure_label"] = paper["figure_label"]
         cleaned.append(item)
     stats = dict(summary)
     stats["updated"] = updated
@@ -554,6 +558,10 @@ def render_yaml(data):
             lines.append(f"    citations: {int(paper['citations'])}")
         if "recent" in paper:
             lines.append(f"    recent: {'true' if paper['recent'] else 'false'}")
+        if paper.get("figure"):
+            lines.append(f"    figure: {yaml_quote(paper['figure'])}")
+        if paper.get("figure_label"):
+            lines.append(f"    figure_label: {yaml_quote(paper['figure_label'])}")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
