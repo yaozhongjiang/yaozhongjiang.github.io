@@ -58,6 +58,10 @@ papers:
     citations: 1
     figure: "/images/papers/mind-architecture.jpg"
     figure_label: "Figure 3"
+    figure_width: 1100
+    figure_height: 465
+    task: "Decide the next psychiatric question from a criteria-grounded evidence state."
+    claim: "Each turn stores observed evidence, open criterion checks, active differentials, and how reliable the support is. That shared state selects the action and scores information gain."
 
   - title: "The Local–Global Alignment Paradox: Evaluating Distributed Safety Reconstruction in Multi-Agent Systems"
     venue: "UKAIRS 26"
@@ -76,6 +80,10 @@ papers:
     recent: true
     figure: "/images/papers/akgma-architecture.jpg"
     figure_label: "Figure 2"
+    figure_width: 1192
+    figure_height: 589
+    task: "Caption open-world images using a knowledge graph aligned to the scene."
+    claim: "AKGMA links visual entities to a knowledge graph, builds an image-specific subgraph, and adds scene context before generation. The aim is fewer knowledge hallucinations and more specific captions."
 
   - title: "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs"
     venue: "ACL 2026"
@@ -86,6 +94,10 @@ papers:
     recent: true
     figure: "/images/papers/fairgamer-overview.jpg"
     figure_label: "Figure 2"
+    figure_width: 1100
+    figure_height: 536
+    task: "Measure social bias in LLM-based video game NPCs."
+    claim: "The benchmark scores class, race, age, and nationality bias in transaction, cooperation, and competition. Across 12 tasks, larger models showed stronger bias."
 
   - title: "PrivacyShadow: Revealing Fine-Tuning Leakage in Vision-Language Models Via Dual-Level Black-Box Attacks"
     venue: "ICASSP 2026"
@@ -104,6 +116,10 @@ papers:
     recent: true
     figure: "/images/papers/peft-overview.jpg"
     figure_label: "Figure 1"
+    figure_width: 1200
+    figure_height: 747
+    task: "Measure how much structure a black-box PEFT adapter leaks."
+    claim: "VectorHijack-SR compares local runs of the public base model with the service output. From those residuals it bounds the adapter family, layer, and coarse rank."
 
   - title: "MIND: Unified Inquiry and Diagnosis RL with Criteria Grounded Clinical Supports for Psychiatric Consultation"
     venue: "arXiv"
@@ -114,6 +130,10 @@ papers:
     recent: true
     figure: "/images/papers/mind-architecture.jpg"
     figure_label: "Figure 3"
+    figure_width: 1100
+    figure_height: 465
+    task: "Decide the next psychiatric question from a criteria-grounded evidence state."
+    claim: "Each turn stores observed evidence, open criterion checks, active differentials, and how reliable the support is. That shared state selects the action and scores information gain."
 
   - title: "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs"
     venue: "arXiv"
@@ -124,6 +144,10 @@ papers:
     recent: true
     figure: "/images/papers/fairgamer-overview.jpg"
     figure_label: "Figure 2"
+    figure_width: 1100
+    figure_height: 536
+    task: "Measure social bias in LLM-based video game NPCs."
+    claim: "The benchmark scores class, race, age, and nationality bias in transaction, cooperation, and competition. Across 12 tasks, larger models showed stronger bias."
 
   - title: "Enhancing LLM Jailbreak: A Dual-Strategy Approach of Token Suppression and Induction"
     venue: "CSCWD 2025"
@@ -150,6 +174,10 @@ papers:
     recent: false
     figure: "/images/papers/intent-framework.jpg"
     figure_label: "Figure 1"
+    figure_width: 1100
+    figure_height: 478
+    task: "Jailbreak an LLM by hiding the query's real intent."
+    claim: "The attack either obscures the intent or makes the query ambiguous so the model's checks miss it. On ChatGPT, Qwen, and Baichuan it succeeded for 69.21% of prompts."
 
   - title: "Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent"
     venue: "arXiv"
@@ -160,6 +188,10 @@ papers:
     recent: false
     figure: "/images/papers/intent-framework.jpg"
     figure_label: "Figure 1"
+    figure_width: 1100
+    figure_height: 478
+    task: "Jailbreak an LLM by hiding the query's real intent."
+    claim: "The attack either obscures the intent or makes the query ambiguous so the model's checks miss it. On ChatGPT, Qwen, and Baichuan it succeeded for 69.21% of prompts."
 
   - title: "SwordEcho: A LLM Jailbreaking Optimization Strategy Driven by Reinforcement Learning"
     venue: "CSAI 2024"
@@ -170,6 +202,10 @@ papers:
     recent: false
     figure: "/images/papers/swordecho-overview.jpg"
     figure_label: "Figure 3"
+    figure_width: 1200
+    figure_height: 624
+    task: "Tune jailbreak prompts with a reinforcement-learning reward."
+    claim: "The reward trades off readability, diversity, and attack strength. On six open models and three commercial APIs, the prompts beat mainstream jailbreaks on attack success rate."
 
   - title: "IntentObfuscator: A jailbreaking method via confuses LLM with prompts"
     venue: "ESORICS 2024"
@@ -203,6 +239,10 @@ papers:
     recent: false
     figure: "/images/papers/consensus-taxonomy.jpg"
     figure_label: "Figure 3"
+    figure_width: 1200
+    figure_height: 877
+    task: "Classify blockchain consensus by the agreement process."
+    claim: "The survey traces how representative algorithms evolved and groups them by that process. It then compares them on decentralization, scalability, security, consistency, availability, and partition tolerance."
 
   - title: "Encrypted traffic classification based on Gaussian mixture models and Hidden Markov Models"
     venue: "JNCA"
@@ -213,6 +253,10 @@ papers:
     recent: false
     figure: "/images/papers/gmm-clusters.jpg"
     figure_label: "Figure 1"
+    figure_width: 1200
+    figure_height: 679
+    task: "Classify encrypted flows from packet size and inter-packet time."
+    claim: "A Gaussian mixture clusters those two features, and a hidden Markov model treats the clusters as observations of the hidden protocol state."
 
   - title: "A privacy preserved and credible network protocol"
     venue: "JPDC"
@@ -223,6 +267,10 @@ papers:
     recent: false
     figure: "/images/papers/pcnp-architecture.jpg"
     figure_label: "Figure 2"
+    figure_width: 1200
+    figure_height: 444
+    task: "Vouch for a packet without learning who sent or received it."
+    claim: "Sender and receiver use a temporary anonymous identity with a communication agent. The agent checks that identity and still does not learn the real owner."
 
   - title: "An Invisible Flow Watermarking for Traffic Tracking: A Hidden Markov Model Approach"
     venue: "ICC"
@@ -302,3 +350,7 @@ papers:
     recent: false
     figure: "/images/papers/invalid-route-injection.jpg"
     figure_label: "Fig. 1"
+    figure_width: 980
+    figure_height: 686
+    task: "Stop invalid routes from being injected into OSPF and BGP."
+    claim: "Injecting invalid routes from stub software routers raises the resource use of other routers. The paper then gives checks that reject those routes."

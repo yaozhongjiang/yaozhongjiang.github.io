@@ -512,6 +512,14 @@ def merge_publications(existing, fetched, summary, updated):
             item["figure"] = paper["figure"]
         if paper.get("figure_label"):
             item["figure_label"] = paper["figure_label"]
+        if paper.get("figure_width"):
+            item["figure_width"] = paper["figure_width"]
+        if paper.get("figure_height"):
+            item["figure_height"] = paper["figure_height"]
+        if paper.get("task"):
+            item["task"] = paper["task"]
+        if paper.get("claim"):
+            item["claim"] = paper["claim"]
         cleaned.append(item)
     stats = dict(summary)
     stats["updated"] = updated
@@ -562,6 +570,14 @@ def render_yaml(data):
             lines.append(f"    figure: {yaml_quote(paper['figure'])}")
         if paper.get("figure_label"):
             lines.append(f"    figure_label: {yaml_quote(paper['figure_label'])}")
+        if paper.get("figure_width"):
+            lines.append(f"    figure_width: {int(paper['figure_width'])}")
+        if paper.get("figure_height"):
+            lines.append(f"    figure_height: {int(paper['figure_height'])}")
+        if paper.get("task"):
+            lines.append(f"    task: {yaml_quote(paper['task'])}")
+        if paper.get("claim"):
+            lines.append(f"    claim: {yaml_quote(paper['claim'])}")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
