@@ -1,6 +1,6 @@
 import unittest
 
-from update_publications import merge_publications, norm_title, venue_label
+from update_publications import merge_publications, norm_title, render_yaml, venue_label
 
 
 SUMMARY = {"citations": 10, "h_index": 2, "i10_index": 1, "source": "OpenAlex"}
@@ -168,6 +168,36 @@ class MergeTests(unittest.TestCase):
         self.assertEqual([paper["title"] for paper in merged["papers"]], [
             "On the Prevention of Invalid Route Injection Attack",
         ])
+
+    def test_keeps_figure_fields(self):
+        existing = {"papers": [{
+            "title": "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs",
+            "venue": "ACL 2026",
+            "year": 2026,
+            "kind": "conference",
+            "url": "https://aclanthology.org/2026.acl-long.2015/",
+            "citations": 0,
+            "figure": "/images/papers/fairgamer-overview.jpg",
+            "figure_label": "Figure 2",
+        }]}
+        fetched = [record(
+            title="FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs",
+            year=2026,
+            kind="conference",
+            venue="ACL 2026",
+            url="https://aclanthology.org/2026.acl-long.2015/",
+            citations=4,
+            doi="10.18653/v1/2026.acl-long.2015",
+        )]
+        merged = merge_publications(existing, fetched, SUMMARY, "2026-11-16")
+        paper = merged["papers"][0]
+        self.assertEqual(paper["citations"], 4)
+        self.assertEqual(paper["venue"], "ACL 2026")
+        self.assertEqual(paper["figure"], "/images/papers/fairgamer-overview.jpg")
+        self.assertEqual(paper["figure_label"], "Figure 2")
+        rendered = render_yaml(merged)
+        self.assertIn('figure: "/images/papers/fairgamer-overview.jpg"', rendered)
+        self.assertIn('figure_label: "Figure 2"', rendered)
 
     def test_venue_labels(self):
         self.assertEqual(venue_label("conference", 2026, "Proceedings of the AAAI Conference on Artificial Intelligence", ""), "AAAI 2026")

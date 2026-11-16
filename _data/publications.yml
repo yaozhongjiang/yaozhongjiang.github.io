@@ -56,6 +56,8 @@ papers:
     kind: "conference"
     url: "https://doi.org/10.18653/2026.emnlp-main.1417"
     citations: 1
+    figure: "/images/papers/mind-architecture.jpg"
+    figure_label: "Figure 3"
 
   - title: "The Local–Global Alignment Paradox: Evaluating Distributed Safety Reconstruction in Multi-Agent Systems"
     venue: "UKAIRS 26"
@@ -80,6 +82,8 @@ papers:
     url: "https://aclanthology.org/2026.acl-long.2015/"
     citations: 0
     recent: true
+    figure: "/images/papers/fairgamer-overview.jpg"
+    figure_label: "Figure 2"
 
   - title: "PrivacyShadow: Revealing Fine-Tuning Leakage in Vision-Language Models Via Dual-Level Black-Box Attacks"
     venue: "ICASSP 2026"
@@ -96,6 +100,8 @@ papers:
     url: "https://arxiv.org/abs/2608.05036"
     citations: 1
     recent: true
+    figure: "/images/papers/peft-overview.jpg"
+    figure_label: "Figure 1"
 
   - title: "MIND: Unified Inquiry and Diagnosis RL with Criteria Grounded Clinical Supports for Psychiatric Consultation"
     venue: "arXiv"
@@ -104,6 +110,8 @@ papers:
     url: "https://arxiv.org/abs/2603.03677"
     citations: 0
     recent: true
+    figure: "/images/papers/mind-architecture.jpg"
+    figure_label: "Figure 3"
 
   - title: "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs"
     venue: "arXiv"
@@ -112,6 +120,8 @@ papers:
     url: "https://arxiv.org/abs/2508.17825"
     citations: 0
     recent: true
+    figure: "/images/papers/fairgamer-overview.jpg"
+    figure_label: "Figure 2"
 
   - title: "Enhancing LLM Jailbreak: A Dual-Strategy Approach of Token Suppression and Induction"
     venue: "CSCWD 2025"
@@ -136,6 +146,8 @@ papers:
     url: "https://doi.org/10.1093/comjnl/bxae124"
     citations: 19
     recent: false
+    figure: "/images/papers/intent-framework.jpg"
+    figure_label: "Figure 1"
 
   - title: "Can LLMs Deeply Detect Complex Malicious Queries? A Framework for Jailbreaking via Obfuscating Intent"
     venue: "arXiv"
@@ -144,6 +156,8 @@ papers:
     url: "https://arxiv.org/abs/2405.03654"
     citations: 1
     recent: false
+    figure: "/images/papers/intent-framework.jpg"
+    figure_label: "Figure 1"
 
   - title: "SwordEcho: A LLM Jailbreaking Optimization Strategy Driven by Reinforcement Learning"
     venue: "CSAI 2024"
@@ -276,3 +290,5 @@ papers:
     url: "http://dx.doi.org/10.1007/978-3-662-44980-6_33"
     citations: 1
     recent: false
+    figure: "/images/papers/invalid-route-injection.jpg"
+    figure_label: "Fig. 1"
