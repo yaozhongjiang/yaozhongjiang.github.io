@@ -74,6 +74,8 @@ papers:
     url: "https://ojs.aaai.org/index.php/AAAI/article/view/38532"
     citations: 0
     recent: true
+    figure: "/images/papers/akgma-architecture.jpg"
+    figure_label: "Figure 2"
 
   - title: "FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs"
     venue: "ACL 2026"
@@ -166,6 +168,8 @@ papers:
     url: "https://dl.acm.org/doi/10.1145/3709026.3709115"
     citations: 4
     recent: false
+    figure: "/images/papers/swordecho-overview.jpg"
+    figure_label: "Figure 3"
 
   - title: "IntentObfuscator: A jailbreaking method via confuses LLM with prompts"
     venue: "ESORICS 2024"
@@ -197,6 +201,8 @@ papers:
     kind: "journal"
     url: "http://dx.doi.org/10.19363/J.cnki.cn10-1380/tn.2021.03.06"
     recent: false
+    figure: "/images/papers/consensus-taxonomy.jpg"
+    figure_label: "Figure 3"
 
   - title: "Encrypted traffic classification based on Gaussian mixture models and Hidden Markov Models"
     venue: "JNCA"
@@ -205,6 +211,8 @@ papers:
     url: "https://doi.org/10.1016/j.jnca.2020.102711"
     citations: 62
     recent: false
+    figure: "/images/papers/gmm-clusters.jpg"
+    figure_label: "Figure 1"
 
   - title: "A privacy preserved and credible network protocol"
     venue: "JPDC"
@@ -213,6 +221,8 @@ papers:
     url: "https://doi.org/10.1016/j.jpdc.2019.06.002"
     citations: 14
     recent: false
+    figure: "/images/papers/pcnp-architecture.jpg"
+    figure_label: "Figure 2"
 
   - title: "An Invisible Flow Watermarking for Traffic Tracking: A Hidden Markov Model Approach"
     venue: "ICC"
