@@ -72,11 +72,23 @@ author_profile: false
         {% for paper in site.data.publications.papers %}
         <tr>
           <td class="num">{{ forloop.index }}</td>
-          <td>
+          <td{% if paper.figure %} class="pub-title-cell"{% endif %}>
             {% if paper.url != "" %}
-              <a href="{{ paper.url }}"{% if paper.figure %} class="pub-title" data-figure="{{ paper.figure | relative_url }}"{% if paper.figure_label %} data-figure-label="{{ paper.figure_label | escape }}"{% endif %}{% endif %}>{{ paper.title }}</a>
+              <a href="{{ paper.url }}"{% if paper.figure %} class="pub-title" aria-expanded="false"{% endif %}>{{ paper.title }}</a>
             {% else %}
               {{ paper.title }}
+            {% endif %}
+            {% if paper.figure %}
+            <div class="pub-expand">
+              <div class="pub-expand-inner">
+                <div class="pub-expand-body">
+                  <img src="{{ paper.figure | relative_url }}" alt="{{ paper.figure_label | escape }}" width="{{ paper.figure_width }}" height="{{ paper.figure_height }}" decoding="async">
+                  {% if paper.figure_label %}<p class="pub-expand-label">{{ paper.figure_label | escape }}</p>{% endif %}
+                  {% if paper.task %}<p class="pub-task">{{ paper.task | escape }}</p>{% endif %}
+                  {% if paper.claim %}<p class="pub-claim">{{ paper.claim | escape }}</p>{% endif %}
+                </div>
+              </div>
+            </div>
             {% endif %}
           </td>
           <td>{{ paper.venue }}</td>
@@ -137,201 +149,109 @@ author_profile: false
     }
   })();
 </script>
-<div class="pub-hover" id="pub-hover" role="tooltip" aria-hidden="true">
-  <img alt="" decoding="async">
-  <p class="pub-hover-label" hidden></p>
-</div>
-<script>
+<script id="pub-expand-script">
   (function () {
-    var popup = document.getElementById("pub-hover");
-    var img = popup.querySelector("img");
-    var label = popup.querySelector(".pub-hover-label");
-    var triggers = document.querySelectorAll(".pub-title[data-figure]");
-    if (!popup || !triggers.length) return;
-    document.body.appendChild(popup);
-
+    var cells = document.querySelectorAll(".pub-title-cell");
+    if (!cells.length) return;
     var current = null;
-    var pinned = false;
-    var keyboardOpen = false;
-    var hideTimer = null;
-    var shownAt = 0;
     var keyboard = false;
+    var keyboardOpen = false;
+    var pinned = false;
+    var hideTimer = null;
 
-    function tapMode() {
-      return window.matchMedia("(hover: none), (pointer: coarse), (max-width: 760px)").matches;
+    function touchUi() {
+      return window.matchMedia("(hover: none) and (pointer: coarse)").matches;
     }
 
-    function overlaps(a, b) {
-      return a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top;
+    function isMouse(event) {
+      return !event.pointerType || event.pointerType === "mouse";
     }
 
-    function place(anchor) {
-      var margin = 8;
-      var gap = 8;
-      var title = anchor.getBoundingClientRect();
-      var width = popup.offsetWidth;
-      var height = popup.offsetHeight;
-      var left = title.left;
-      if (left + width > window.innerWidth - margin) left = window.innerWidth - margin - width;
-      if (left < margin) left = margin;
-      var below = title.bottom + gap;
-      var above = title.top - gap - height;
-      var top = below;
-      var placedAbove = false;
-      if (below + height > window.innerHeight - margin && above >= margin) {
-        top = above;
-        placedAbove = true;
+    function setExpanded(cell, open) {
+      var link = cell.querySelector(".pub-title");
+      if (link) link.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+
+    function closeCell(cell) {
+      if (!cell) return;
+      cell.classList.remove("is-open");
+      setExpanded(cell, false);
+      if (current === cell) {
+        current = null;
+        pinned = false;
+        keyboardOpen = false;
       }
-      if (top < margin) top = margin;
-      if (top + height > window.innerHeight - margin) top = Math.max(margin, window.innerHeight - margin - height);
-      var box = { left: left, top: top, right: left + width, bottom: top + height };
-      if (overlaps(box, title)) {
-        if (title.top - margin > window.innerHeight - title.bottom) {
-          top = Math.max(margin, title.top - gap - height);
-          placedAbove = true;
-        } else {
-          top = Math.min(window.innerHeight - margin - height, title.bottom + gap);
-          placedAbove = false;
-        }
-      }
-      popup.style.left = Math.round(left) + "px";
-      popup.style.top = Math.round(top) + "px";
-      popup.style.transformOrigin = placedAbove ? "center bottom" : "center top";
-      if (placedAbove) popup.classList.add("is-above");
-      else popup.classList.remove("is-above");
     }
 
-    function open(anchor) {
-      shownAt = Date.now();
-      place(anchor);
-      popup.classList.add("is-open");
-      popup.setAttribute("aria-hidden", "false");
-      anchor.setAttribute("aria-describedby", "pub-hover");
-    }
-
-    function show(anchor) {
+    function openCell(cell) {
       clearTimeout(hideTimer);
-      var src = anchor.getAttribute("data-figure");
-      var caption = anchor.getAttribute("data-figure-label") || "";
-      if (current && current !== anchor) current.removeAttribute("aria-describedby");
-      current = anchor;
-      if (caption) {
-        label.textContent = caption;
-        label.hidden = false;
-      } else {
-        label.textContent = "";
-        label.hidden = true;
-      }
-      img.alt = caption || "Figure";
-      function reveal() {
-        if (current !== anchor) return;
-        open(anchor);
-      }
-      if (img.getAttribute("src") !== src) {
-        img.onload = reveal;
-        img.onerror = function () {
-          if (current === anchor) hide();
-        };
-        img.src = src;
-        if (!img.complete) return;
-      }
-      reveal();
+      if (current && current !== cell) closeCell(current);
+      current = cell;
+      cell.classList.add("is-open");
+      setExpanded(cell, true);
     }
 
-    function hide() {
-      clearTimeout(hideTimer);
-      if (current) current.removeAttribute("aria-describedby");
-      current = null;
-      pinned = false;
-      keyboardOpen = false;
-      popup.classList.remove("is-open");
-      popup.classList.remove("is-above");
-      popup.setAttribute("aria-hidden", "true");
-    }
-
-    function scheduleHide() {
+    function scheduleClose(cell) {
       clearTimeout(hideTimer);
       hideTimer = setTimeout(function () {
-        if (pinned) return;
-        if (popup.matches(":hover")) return;
-        if (current && current.matches(":hover")) return;
-        if (keyboardOpen && current === document.activeElement) return;
-        hide();
-      }, 80);
+        if (pinned && touchUi()) return;
+        if (cell.matches(":hover")) return;
+        if (keyboardOpen && cell.contains(document.activeElement)) return;
+        closeCell(cell);
+      }, 40);
     }
 
-    for (var i = 0; i < triggers.length; i++) {
-      (function (el) {
-        var preload = new Image();
-        preload.src = el.getAttribute("data-figure");
-        el.addEventListener("mouseenter", function () {
-          if (tapMode() && pinned) return;
+    for (var i = 0; i < cells.length; i++) {
+      (function (cell) {
+        var link = cell.querySelector(".pub-title");
+        cell.addEventListener("pointerenter", function (event) {
+          if (!isMouse(event)) return;
           pinned = false;
           keyboardOpen = false;
-          show(el);
+          openCell(cell);
         });
-        el.addEventListener("mouseleave", function (event) {
-          if (pinned) return;
-          if (event.relatedTarget && popup.contains(event.relatedTarget)) return;
-          scheduleHide();
+        cell.addEventListener("pointerleave", function (event) {
+          if (!isMouse(event)) return;
+          scheduleClose(cell);
         });
-        el.addEventListener("focus", function () {
+        if (!link) return;
+        link.addEventListener("focus", function () {
           if (!keyboard) return;
           keyboard = false;
           keyboardOpen = true;
-          show(el);
+          pinned = false;
+          openCell(cell);
         });
-        el.addEventListener("blur", function () {
+        link.addEventListener("blur", function () {
           keyboardOpen = false;
           if (pinned) return;
-          scheduleHide();
+          scheduleClose(cell);
         });
-        el.addEventListener("pointerdown", function () {
-          el._previewTap = tapMode() && current !== el;
-        });
-        el.addEventListener("click", function (event) {
-          if (!tapMode() || !el._previewTap) return;
+        link.addEventListener("click", function (event) {
+          if (!touchUi()) return;
+          if (cell.classList.contains("is-open") && pinned) return;
           event.preventDefault();
           pinned = true;
           keyboardOpen = false;
-          show(el);
+          openCell(cell);
         });
-      })(triggers[i]);
+      })(cells[i]);
     }
-
-    popup.addEventListener("mouseenter", function () {
-      clearTimeout(hideTimer);
-    });
-    popup.addEventListener("mouseleave", function (event) {
-      if (pinned) return;
-      if (event.relatedTarget && current && current.contains(event.relatedTarget)) return;
-      scheduleHide();
-    });
 
     document.addEventListener("keydown", function (event) {
       if (event.key === "Tab") keyboard = true;
-      if (event.key === "Escape") hide();
+      if (event.key === "Escape") closeCell(current);
     });
 
     document.addEventListener("pointerdown", function (event) {
-      if (!pinned) return;
-      if (popup.contains(event.target)) return;
-      if (current && current.contains(event.target)) return;
-      hide();
+      if (!pinned || !current) return;
+      if (current.contains(event.target)) return;
+      closeCell(current);
     });
 
-    document.addEventListener("scroll", function () {
-      if (!popup.classList.contains("is-open") && !current) return;
-      if (Date.now() - shownAt < 120) {
-        if (current) place(current);
-        return;
-      }
-      hide();
+    window.addEventListener("scroll", function () {
+      if (pinned) closeCell(current);
     }, true);
-
-    window.addEventListener("resize", function () {
-      if (current && popup.classList.contains("is-open")) place(current);
-    });
   })();
 </script>
 </div>

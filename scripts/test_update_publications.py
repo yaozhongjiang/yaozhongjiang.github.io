@@ -179,6 +179,10 @@ class MergeTests(unittest.TestCase):
             "citations": 0,
             "figure": "/images/papers/fairgamer-overview.jpg",
             "figure_label": "Figure 2",
+            "figure_width": 1100,
+            "figure_height": 536,
+            "task": "Measure social bias in LLM-based video game NPCs.",
+            "claim": "The benchmark scores class, race, age, and nationality bias.",
         }]}
         fetched = [record(
             title="FAIRGAMER: Evaluating Social Biases in LLM-Based Video Game NPCs",
@@ -195,9 +199,14 @@ class MergeTests(unittest.TestCase):
         self.assertEqual(paper["venue"], "ACL 2026")
         self.assertEqual(paper["figure"], "/images/papers/fairgamer-overview.jpg")
         self.assertEqual(paper["figure_label"], "Figure 2")
+        self.assertEqual(paper["task"], "Measure social bias in LLM-based video game NPCs.")
+        self.assertEqual(paper["claim"], "The benchmark scores class, race, age, and nationality bias.")
         rendered = render_yaml(merged)
         self.assertIn('figure: "/images/papers/fairgamer-overview.jpg"', rendered)
         self.assertIn('figure_label: "Figure 2"', rendered)
+        self.assertIn('figure_width: 1100', rendered)
+        self.assertIn('task: "Measure social bias in LLM-based video game NPCs."', rendered)
+        self.assertIn('claim: "The benchmark scores class, race, age, and nationality bias."', rendered)
 
     def test_venue_labels(self):
         self.assertEqual(venue_label("conference", 2026, "Proceedings of the AAAI Conference on Artificial Intelligence", ""), "AAAI 2026")
